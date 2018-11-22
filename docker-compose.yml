@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+
+  wordpress:
+    image: app-wordpress
+    build: .
+    env_file: .env
+    volumes:
+      - ./app/themes:/var/www/html/wp-content/themes
+      - ./app/plugins:/var/www/html/wp-content/plugins
+      - ./app/uploads:/var/www/html/wp-content/uploads
+      - ./app/wp-config.php:/var/www/html/wp-config.php
+      - ./app/.htaccess:/var/www/html/.htaccess
+    ports:
+      - 80:80
+
+  cli:
+    image: wordpress:cli-php7.2
+    env_file: .env
+    volumes:
+      - ./app:/var/www/html
+
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=wordpress
+    volumes:
+      - ./mysql:/var/lib/mysql
+
+  watch:
+    image: app-watch
+    build:
+      context: .
+      dockerfile: "Dockerfile.watch"
+    command: ./watch
+    volumes:
+      - ./app/themes/base/:/app/
+    ports:
+      - 3000:3000
+      - 3001:3001
+
