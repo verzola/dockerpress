@@ -1,10 +1,7 @@
 // Abstract
 // ==========================================================================
 
-@import "abstract/unit";
-@import "abstract/variables";
-@import "abstract/breakpoint";
-@import "abstract/z-index";
+//@import "abstract/";
 
 // Vendor
 // ==========================================================================
@@ -15,23 +12,17 @@
 // Base
 // ==========================================================================
 
-@import "base/utilities";
-@import "base/fonts";
 @import "base/elements";
-@import "base/generics";
 
 // Layout
 // ==========================================================================
 
-@import "layout/l-header";
-@import "layout/l-main";
-@import "layout/l-footer";
+//@import "layout/";
 
 // Component
 // ==========================================================================
 
-@import "component/c-button";
-@import "component/c-container";
+//@import "component/";
 
 // State
 // ==========================================================================
@@ -41,7 +32,7 @@
 // Page
 // ==========================================================================
 
-@import "page/index";
+// @import "page/";
 
 // Theme
 // ==========================================================================
