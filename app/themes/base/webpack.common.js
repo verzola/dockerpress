@@ -1,4 +1,7 @@
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const StyleLintPlugin = require("stylelint-webpack-plugin");
 const devMode = process.env.NODE_ENV !== "production";
@@ -14,28 +17,30 @@ module.exports = {
     filename: devMode ? "[name].js" : "[name].[hash].js"
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
-    }),
     new BrowserSyncPlugin(
       {
         host: "localhost",
         port: 3000,
         proxy: "http://wordpress",
         files: ["**/*.php"],
-        reloadDelay: 0
+        open: false,
+        notify: false,
+        minify: false
       },
       {
-        injectCss: true
+        injectCss: true,
       }
     ),
     new MiniCssExtractPlugin({
       filename: devMode ? "[name].css" : "[name].[hash].css",
       chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
     }),
-    new StyleLintPlugin({})
+    new StyleLintPlugin({}),
+    new CleanWebpackPlugin(['dist']),
+    new FriendlyErrorsWebpackPlugin(),
+    new ImageminPlugin({
+      disable: process.env.NODE_ENV !== 'production'
+    })
   ],
   module: {
     rules: [
