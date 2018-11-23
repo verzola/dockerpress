@@ -19,7 +19,7 @@ function add_scripts_and_styles() {
             );
         }
 
-        if (pathinfo($file, PATHINFO_EXTENSION) === 'css') {
+        if (pathinfo($file, PATHINFO_EXTENSION) === 'css' && !env('BROWSERSYNC')) {
             wp_enqueue_style(
                 $name,
                 get_template_directory_uri() . '/dist/' . $fullName,
