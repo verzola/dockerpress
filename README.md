@@ -25,16 +25,13 @@ Fast wordpress development environment based on Docker and Webpack
 ```sh
 $ git clone https://github.com/verzola/dockerpress.git
 $ cd dockerpress
+$ cp .env.example .env
 $ docker-compose up -d
 Access http://localhost:3000
 ```
 
 ### Environment variables
-If you need to edit the default config, copy env.example to .env:
-```sh
-$ cp .env.example .env
-$ vim .env
-```
+If you need to edit the default config, edit .env file.
 
 ### Helpers
 These helpers run things inside container, so you don't have to install on your machine
