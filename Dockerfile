@@ -1,6 +1,6 @@
 FROM node:10-stretch
 WORKDIR /app
-COPY ./app/themes/base/package*.json .
+COPY ./app/themes/base/package*.json ./
 RUN npm install
 COPY ./app/themes/base/ .
 RUN npm run build
