@@ -1,8 +1,8 @@
-# Dockerpress
-Tired of waiting for a VM to provision so you can develop your next Wordpress product?
-Dockerpress starts in seconds and comes with everything you need to develop awesome Wordpress applications.
+# DockerPress
+Fast wordpress development environment based on Docker and Webpack
 
 ## Features
+- Comes with base theme pre-configured
 - Official Wordpress Docker image
 - PHP 7.2
 - MySQL 5.7
@@ -43,8 +43,3 @@ These helpers run things inside container, so you don't have to install on your 
 - ./bin/mysql -> wrapper to connect to mysql db
 - ./bin/npm -> wrapper to npm package manager
 - ./bin/wp -> wrapper for wp-cli
-
-## TODO
-- Add MailHog
-- Add SMTP plugin to use it with MailHog
-- Deploy
