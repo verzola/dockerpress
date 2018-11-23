@@ -8,11 +8,12 @@ Fast wordpress development environment based on Docker and Webpack
 - MySQL 5.7
 - Webpack 4
 - Browsersync
-- Optimizes and minifies CSS and JS
+- Optimizes and minifies JS, CSS and images
 - Autoprefixer
 - Stylelint
 - Prettier
 - WP-CLI
+- MailHog
 
 ## Development
 
