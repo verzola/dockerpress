@@ -32,7 +32,9 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "stylelint": "^9.8.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.4.0",
     "stylelint-webpack-plugin": "^0.10.5",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "url-loader": "^1.1.2",
@@ -55,8 +57,5 @@
       "prettier --write",
       "git add"
     ]
-  },
-  "stylelint": {
-    "extends": "stylelint-config-standard"
   }
 }
