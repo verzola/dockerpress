@@ -1,9 +1,15 @@
 <?php
 /**
  * Custom WordPress configurations on "wp-config.php" file.
- *
+ * This wp-config.php is modified to get configs from environment variables.
  */
 
+/**
+ * Get environment variable or default
+ * @param $key string
+ * @param $default mixed
+ * @return string
+ */
 function env( $key, $default = null ) {
     $value = getenv( $key );
 
@@ -50,7 +56,6 @@ define( 'DB_CHARSET',  env('WP_DB_CHARSET', 'utf8') );
 
 /* MySQL database table prefix. */
 $table_prefix = env('WP_TABLE_PREFIX', 'wp_');
-
 
 /* Authentication Unique Keys and Salts. */
 /* https://api.wordpress.org/secret-key/1.1/salt/ */
