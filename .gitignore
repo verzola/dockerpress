@@ -6,3 +6,7 @@ node_modules/
 
 # MySQL volume folder
 mysql/
+
+# Plugins
+app/plugins/**/*
+!app/plugins/.gitkeep
