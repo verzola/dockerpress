@@ -1,4 +1,4 @@
-FROM node:10-stretch
+FROM node:11
 WORKDIR /app
 COPY ./app/themes/base/package*.json ./
 RUN npm install
