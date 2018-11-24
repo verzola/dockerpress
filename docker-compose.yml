@@ -32,13 +32,11 @@ services:
       - ./mysql:/var/lib/mysql
 
   watch:
-    image: app-watch
-    build:
-      context: .
-      dockerfile: "Dockerfile.watch"
+    image: node:11
     command: ./watch
     volumes:
       - ./app/themes/base/:/app/
+    working_dir: /app
     ports:
       - 3000:3000
       - 3001:3001
