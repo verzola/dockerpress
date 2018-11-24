@@ -5,7 +5,7 @@
   "scripts": {
     "format": "prettier --write \"**/*.{js,json,scss,md}\"",
     "build": "NODE_ENV=production webpack --progress --config webpack.prod.js",
-    "dev": "webpack --progress --config webpack.dev.js --watch"
+    "start": "webpack --progress --config webpack.dev.js --watch"
   },
   "author": "Gustavo Verzola",
   "devDependencies": {
@@ -21,9 +21,7 @@
     "cssnano": "^4.1.7",
     "file-loader": "^2.0.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
-    "husky": "^1.2.0",
     "imagemin-webpack-plugin": "^2.3.0",
-    "lint-staged": "^8.1.0",
     "mini-css-extract-plugin": "^0.4.5",
     "node-sass": "^4.10.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
@@ -46,16 +44,5 @@
     "breakpoint-sass": "2.7.1",
     "jquery": "3.3.1",
     "normalize.css": "^8.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,scss,md}": [
-      "prettier --write",
-      "git add"
-    ]
   }
 }

@@ -15,12 +15,6 @@ services:
     ports:
       - 80:80
 
-  cli:
-    image: wordpress:cli-php7.2
-    env_file: .env
-    volumes:
-      - ./app:/var/www/html
-
   mysql:
     image: mysql:5.7
     ports:
@@ -30,19 +24,3 @@ services:
       - MYSQL_DATABASE=wordpress
     volumes:
       - ./mysql:/var/lib/mysql
-
-  watch:
-    image: node:11
-    command: ./watch
-    volumes:
-      - ./app/themes/base/:/app/
-    working_dir: /app
-    ports:
-      - 3000:3000
-      - 3001:3001
-
-  mailhog:
-    image: mailhog/mailhog
-    ports:
-      - 1025:1025
-      - 8025:8025
