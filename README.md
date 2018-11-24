@@ -7,6 +7,7 @@ Fast wordpress development environment based on Docker and Webpack
 - PHP 7.2
 - MySQL 5.7
 - Webpack 4
+- SASS
 - Browsersync
 - Optimizes and minifies JS, CSS and images
 - Autoprefixer
