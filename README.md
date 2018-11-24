@@ -41,3 +41,8 @@ These helpers run things inside container, so you don't have to install on your 
 - ./bin/mysql -> wrapper to connect to mysql db
 - ./bin/npm -> wrapper to npm package manager
 - ./bin/wp -> wrapper for wp-cli
+
+### MailHog
+1. Activate WP Mail SMTP by WPForms plugin
+1. Point your SMTP server to mailhog:1025
+2. Access http://localhost:8025/
