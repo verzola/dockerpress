@@ -1,20 +1,22 @@
 # DockerPress
 Fast wordpress development environment based on Docker and Webpack
+WARNING: This tool is under development. Use at your own risk.
+If you find any problem, please open an issue.
 
 ## Features
-- Comes with base theme pre-configured
-- Official Wordpress Docker image
 - PHP 7.2
 - MySQL 5.7
 - Webpack 4
-- SASS
-- Browsersync
-- Optimizes and minifies JS, CSS and images
+- SCSS
+- BrowserSync
 - Autoprefixer
 - Stylelint
 - Prettier
 - WP-CLI
 - MailHog
+- Comes with base theme pre-configured
+- Official Wordpress Docker image
+- Optimizes and minifies JS, CSS and images
 
 ## Development
 
