@@ -1,7 +1,9 @@
 # DockerPress
 Fast wordpress development environment based on Docker and Webpack
+
 WARNING: This tool is under development. Use at your own risk.
-If you find any problem, please open an issue.
+
+If you find any problem, please [open an issue](https://github.com/verzola/dockerpress/issues/new).
 
 ## Features
 - PHP 7.2
@@ -21,8 +23,8 @@ If you find any problem, please open an issue.
 ## Development
 
 ### Requirements
-- docker (https://www.docker.com/get-started)
-- docker-compose (https://docs.docker.com/compose/install/)
+- [docker](https://www.docker.com/get-started)
+- [docker-compose](https://docs.docker.com/compose/install/)
 
 ### Setup
 ```sh
