@@ -1,7 +1,7 @@
 # DockerPress
 Fast wordpress development environment based on Docker and Webpack
 
-WARNING: This tool is under development. Use at your own risk.
+**WARNING**: This tool is under development. Use at your own risk.
 
 If you find any problem, please [open an issue](https://github.com/verzola/dockerpress/issues/new).
 
