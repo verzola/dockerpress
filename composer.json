@@ -1,0 +1,33 @@
+{
+    "name": "verzola/dockerpress",
+    "authors": [
+        {
+            "name": "Gustavo Verzola",
+            "email": "verzola@gmail.com"
+        }
+    ],
+   "repositories": [
+        {
+          "type": "composer",
+          "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "johnpbloch/wordpress": "^4.9"
+    },
+    "extra": {
+        "wordpress-install-dir": "app/wp",
+        "installer-paths": {
+            "app/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "app/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "app/themes/{$name}/": [
+                "type:wordpress-theme"
+            ]
+        }
+    }
+}

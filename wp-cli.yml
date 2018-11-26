@@ -1,0 +1,7 @@
+version: '3'
+services:
+  cli:
+    image: wordpress:cli-php7.2
+    env_file: .env
+    volumes:
+      - ./app:/var/www/html

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dev:
+    image: node:11
+    command: ./dev
+    volumes:
+      - ./app/themes/base/:/app/
+    working_dir: /app
+    ports:
+      - 3000:3000
+      - 3001:3001

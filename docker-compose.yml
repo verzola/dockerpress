@@ -6,20 +6,15 @@ services:
     image: app-wordpress
     build: .
     env_file: .env
+    ports:
+      - 80:80
     volumes:
       - ./app/themes:/var/www/html/wp-content/themes
+      - ./app/mu-plugins:/var/www/html/wp-content/mu-plugins
       - ./app/plugins:/var/www/html/wp-content/plugins
       - ./app/uploads:/var/www/html/wp-content/uploads
       - ./app/wp-config.php:/var/www/html/wp-config.php
       - ./app/.htaccess:/var/www/html/.htaccess
-    ports:
-      - 80:80
-
-  cli:
-    image: wordpress:cli-php7.2
-    env_file: .env
-    volumes:
-      - ./app:/var/www/html
 
   mysql:
     image: mysql:5.7
@@ -30,19 +25,3 @@ services:
       - MYSQL_DATABASE=wordpress
     volumes:
       - ./mysql:/var/lib/mysql
-
-  watch:
-    image: node:11
-    command: ./watch
-    volumes:
-      - ./app/themes/base/:/app/
-    working_dir: /app
-    ports:
-      - 3000:3000
-      - 3001:3001
-
-  mailhog:
-    image: mailhog/mailhog
-    ports:
-      - 1025:1025
-      - 8025:8025

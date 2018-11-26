@@ -1,26 +1,30 @@
 # DockerPress
 Fast wordpress development environment based on Docker and Webpack
 
+**WARNING**: This tool is under development. Use at your own risk.
+
+If you find any problem, please [open an issue](https://github.com/verzola/dockerpress/issues/new).
+
 ## Features
-- Comes with base theme pre-configured
-- Official Wordpress Docker image
 - PHP 7.2
 - MySQL 5.7
 - Webpack 4
-- SASS
-- Browsersync
-- Optimizes and minifies JS, CSS and images
+- SCSS
+- BrowserSync
 - Autoprefixer
 - Stylelint
 - Prettier
 - WP-CLI
 - MailHog
+- Comes with base theme pre-configured
+- Official Wordpress Docker image
+- Optimizes and minifies JS, CSS and images
 
 ## Development
 
 ### Requirements
-- docker (https://www.docker.com/get-started)
-- docker-compose (https://docs.docker.com/compose/install/)
+- [docker](https://www.docker.com/get-started)
+- [docker-compose](https://docs.docker.com/compose/install/)
 
 ### Setup
 ```sh
@@ -28,8 +32,12 @@ $ git clone https://github.com/verzola/dockerpress.git
 $ cd dockerpress
 $ cp .env.example .env
 $ docker-compose up -d
-Access http://localhost:3000
+Access http://localhost
 ```
+
+### Develop
+1. Run ./bin/dev
+2. Access http://localhost:3000
 
 ### Environment variables
 If you need to edit the default config, edit .env file.
@@ -38,12 +46,15 @@ If you need to edit the default config, edit .env file.
 These helpers run things inside container, so you don't have to install on your machine
 
 - ./bin/build -> build production webpack bundle
+- ./bin/dev -> starts development environment
 - ./bin/dump -> create a database dump in database/dump.sql
+- ./bin/mailhog -> starts mailhog service
 - ./bin/mysql -> wrapper to connect to mysql db
 - ./bin/npm -> wrapper to npm package manager
 - ./bin/wp -> wrapper for wp-cli
 
 ### MailHog
-1. Activate WP Mail SMTP by WPForms plugin
-1. Point your SMTP server to mailhog:1025
-2. Access http://localhost:8025/
+1. Run ./bin/mailhog
+2. Install and activate WP Mail SMTP by WPForms plugin
+3. Point your SMTP server to mailhog:1025
+4. Access http://localhost:8025/

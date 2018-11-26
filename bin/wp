@@ -1,2 +1,2 @@
 #!/bin/sh
-docker-compose run --rm cli wp $@
+docker-compose -f wp-cli.yml run --rm cli wp $@

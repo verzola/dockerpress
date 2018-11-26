@@ -24,7 +24,6 @@ module.exports = {
         proxy: "http://wordpress",
         files: ["**/*.php"],
         open: false,
-        notify: false,
         minify: false
       },
       {
