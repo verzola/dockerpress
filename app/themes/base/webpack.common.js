@@ -1,7 +1,7 @@
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
-const ImageminPlugin = require('imagemin-webpack-plugin').default
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const FriendlyErrorsWebpackPlugin = require("friendly-errors-webpack-plugin");
+const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const StyleLintPlugin = require("stylelint-webpack-plugin");
 const devMode = process.env.NODE_ENV !== "production";
@@ -28,18 +28,18 @@ module.exports = {
         minify: false
       },
       {
-        injectCss: true,
+        injectCss: true
       }
     ),
     new MiniCssExtractPlugin({
       filename: devMode ? "[name].css" : "[name].[hash].css",
       chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
     }),
-    new StyleLintPlugin({}),
-    new CleanWebpackPlugin(['dist']),
+    new StyleLintPlugin(),
+    new CleanWebpackPlugin(["dist"]),
     new FriendlyErrorsWebpackPlugin(),
     new ImageminPlugin({
-      disable: process.env.NODE_ENV !== 'production'
+      disable: process.env.NODE_ENV !== "production"
     })
   ],
   module: {
@@ -47,12 +47,15 @@ module.exports = {
       {
         test: /\.m?js$/,
         exclude: /(node_modules)/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"]
-          }
-        }
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"]
+            }
+          },
+          "eslint-loader"
+        ]
       },
       {
         test: /\.(sa|sc|c)ss$/,
