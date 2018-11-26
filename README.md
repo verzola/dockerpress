@@ -13,6 +13,7 @@ If you find any problem, please [open an issue](https://github.com/verzola/docke
 - BrowserSync
 - Autoprefixer
 - Stylelint
+- ESLint
 - Prettier
 - WP-CLI
 - MailHog
