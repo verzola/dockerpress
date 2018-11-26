@@ -1,0 +1,10 @@
+{
+    "name": "verzola/dockerpress",
+    "authors": [
+        {
+            "name": "Gustavo Verzola",
+            "email": "verzola@gmail.com"
+        }
+    ],
+    "require": {}
+}

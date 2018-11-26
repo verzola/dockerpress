@@ -10,3 +10,5 @@ mysql/
 # Plugins
 app/plugins/**/*
 !app/plugins/.gitkeep
+
+/vendor/
