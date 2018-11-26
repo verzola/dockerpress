@@ -1,23 +1,28 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
+<main role="main">
 
-if ( have_posts() ) :
-    while ( have_posts() ) :
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-?>
+        <article>
+            <header>
+                <?php the_post_thumbnail() ?>
+                <h1><?php the_title() ?></h1>
+            </header>
 
-    <h2><?php the_title() ?></h2>
-    <?php the_post_thumbnail() ?>
-    <?php the_post() ?>
-    <?php the_excerpt() ?>
+            <?php the_content() ?>
+        </article>
 
-<?php
-    endwhile;
-else :
-    _e( 'Sorry, no posts matched your criteria.', 'devhub' );
-endif;
+    <?php endwhile; else: ?>
 
-get_sidebar();
+        <article>
+            <p>Nothing to see.</p>
+        </article>
 
-get_footer();
+    <?php endif; ?>
+
+    <?php get_sidebar(); ?>
+
+</main>
+
+<?php get_footer();
