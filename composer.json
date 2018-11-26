@@ -1,11 +1,18 @@
 {
     "name": "verzola/dockerpress",
+    "type": "project",
+    "license": "WTFPL",
     "authors": [
         {
             "name": "Gustavo Verzola",
             "email": "verzola@gmail.com"
         }
     ],
+    "config": {
+      "preferred-install": "dist",
+      "optimize-autoloader": true,
+      "sort-packages": true
+    },
    "repositories": [
         {
           "type": "composer",

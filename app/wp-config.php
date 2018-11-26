@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Custom WordPress configurations on "wp-config.php" file.
  * This wp-config.php is modified to get configs from environment variables.
