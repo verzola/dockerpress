@@ -10,11 +10,11 @@
         {
           "type": "composer",
           "url": "https://wpackagist.org"
-        },
+        }
     ],
     "require": {
         "composer/installers": "~1.0",
-        "johnpbloch/wordpress-core-installer": "^1.0"
+        "johnpbloch/wordpress": "^4.9"
     },
     "extra": {
         "wordpress-install-dir": "app/wp",
@@ -27,7 +27,7 @@
             ],
             "app/themes/{$name}/": [
                 "type:wordpress-theme"
-            ],
+            ]
         }
     }
 }
