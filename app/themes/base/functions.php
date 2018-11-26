@@ -28,8 +28,6 @@ add_action('after_setup_theme', function () {
 
 // Enqueue theme scripts and styles
 add_action('wp_enqueue_scripts', function () {
-    wp_deregister_script('jquery');
-
     $distFile = new DirectoryIterator(get_stylesheet_directory() . '/dist');
 
     foreach ($distFile as $file) {
