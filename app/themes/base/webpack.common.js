@@ -16,6 +16,9 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: devMode ? "[name].js" : "[name].[hash].js"
   },
+  externals: {
+    jquery: "jQuery"
+  },
   plugins: [
     new BrowserSyncPlugin(
       {
