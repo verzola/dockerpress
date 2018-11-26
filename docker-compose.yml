@@ -8,12 +8,11 @@ services:
     env_file: .env
     volumes:
       - ./app/themes:/var/www/html/wp-content/themes
+      - ./app/mu-plugins:/var/www/html/wp-content/mu-plugins
       - ./app/plugins:/var/www/html/wp-content/plugins
       - ./app/uploads:/var/www/html/wp-content/uploads
       - ./app/wp-config.php:/var/www/html/wp-config.php
       - ./app/.htaccess:/var/www/html/.htaccess
-    ports:
-      - 80:80
 
   mysql:
     image: mysql:5.7
