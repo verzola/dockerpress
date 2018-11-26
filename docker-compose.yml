@@ -6,6 +6,8 @@ services:
     image: app-wordpress
     build: .
     env_file: .env
+    ports:
+      - 80:80
     volumes:
       - ./app/themes:/var/www/html/wp-content/themes
       - ./app/mu-plugins:/var/www/html/wp-content/mu-plugins
