@@ -14,7 +14,6 @@ services:
       - ./app/plugins:/var/www/html/wp-content/plugins
       - ./app/uploads:/var/www/html/wp-content/uploads
       - ./app/wp-config.php:/var/www/html/wp-config.php
-      - ./app/.htaccess:/var/www/html/.htaccess
 
   mysql:
     image: mysql:5.7
