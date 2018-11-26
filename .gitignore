@@ -7,6 +7,9 @@ node_modules/
 # MySQL volume folder
 mysql/
 
+# WP Core
+app/wp
+
 # Plugins
 app/plugins/**/*
 !app/plugins/.gitkeep
