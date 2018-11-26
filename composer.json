@@ -6,5 +6,28 @@
             "email": "verzola@gmail.com"
         }
     ],
-    "require": {}
+   "repositories": [
+        {
+          "type": "composer",
+          "url": "https://wpackagist.org"
+        },
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "johnpbloch/wordpress-core-installer": "^1.0"
+    },
+    "extra": {
+        "wordpress-install-dir": "app/wp",
+        "installer-paths": {
+            "app/mu-plugins/{$name}/": [
+                "type:wordpress-muplugin"
+            ],
+            "app/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "app/themes/{$name}/": [
+                "type:wordpress-theme"
+            ],
+        }
+    }
 }
