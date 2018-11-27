@@ -19,7 +19,7 @@
                     <h1 class="c-article-card__title"><?php the_title() ?></h1>
                 </header>
 
-                <?php the_excerpt() ?>
+                <div class="c-article-card__excerpt"><?php the_excerpt() ?></div>
 
                 <a class="c-button" href="<?php echo get_permalink() ?>">Read more</a>
             </div>

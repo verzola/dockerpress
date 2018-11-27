@@ -6,12 +6,8 @@
     display: inline-block;
     max-width: 300px;
 
-    h1 {
+    &__title {
         margin: .5rem 0;
-    }
-
-    p {
-        margin-top: 0;
     }
 
     &__image {
@@ -37,5 +33,11 @@
 
     &__author {
         font-weight: bold;
+    }
+
+    &__excerpt {
+        p {
+            margin-top: 0;
+        }
     }
 }
