@@ -53,6 +53,8 @@ add_action('wp_enqueue_scripts', function () {
             );
         }
     }
+
+    wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 });
 
 // Remove JPEG compression.
