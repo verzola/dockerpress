@@ -1,3 +1,17 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.c-button {
+    border-radius: 2px;
+    background: $brand-color;
+    color: #fff;
+    padding: .5rem .75rem;
+    font-weight: bold;
+    display: inline-block;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      background: lighten($brand-color, 3%);
+    }
+}

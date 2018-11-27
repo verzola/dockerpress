@@ -1,3 +1,36 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+
+.l-header {
+  background: #111;
+  display: flex;
+  padding: 1rem;
+  color: #fff;
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    font-weight: bold;
+  }
+
+  li:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  a {
+    @include on-event {
+        color: #fff;
+    }
+  }
+
+  &__brand {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &__nav {
+    margin-left: auto;
+  }
+}
