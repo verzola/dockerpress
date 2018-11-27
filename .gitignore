@@ -1,4 +1,5 @@
 # Package Managers
+vendor/
 node_modules/
 yarn-error.log
 
@@ -15,4 +16,7 @@ app/wp
 app/plugins/**/*
 !app/plugins/.gitkeep
 
-/vendor/
+# Uploads
+app/uploads/**/*
+!app/uploads/.gitkeep
+
