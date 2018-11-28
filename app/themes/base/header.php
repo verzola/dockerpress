@@ -14,6 +14,9 @@
         </a>
 
         <nav class="l-header__nav" role="navigation">
-            <?php wp_nav_menu() ?>
+            <?php wp_nav_menu([
+                'block' => 'menu',
+                'container' => false
+            ]) ?>
         </nav>
     </header>

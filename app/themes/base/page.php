@@ -1,21 +1,20 @@
 <?php get_header() ?>
 
-<main class="l-main container" role="main">
+<main class="l-main" role="main">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post() ?>
 
-        <header>
-            <?php the_post_thumbnail() ?>
+        <header class="c-hero">
             <h1><?php the_title() ?></h1>
         </header>
 
-        <?php the_content() ?>
+        <div class="container">
+            <?php the_content() ?>
+        </div>
 
     <?php endwhile; else: ?>
 
-        <article>
-            <p>Nothing to see.</p>
-        </article>
+        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 
     <?php endif; ?>
 
