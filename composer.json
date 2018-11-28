@@ -21,7 +21,12 @@
     ],
     "require": {
         "composer/installers": "~1.0",
-        "johnpbloch/wordpress": "^4.9"
+        "johnpbloch/wordpress": "^4.9",
+        "wordplate/bem": "^0.3.0",
+        "wordplate/mail": "^4.0",
+        "wpackagist-plugin/disable-emojis": "^1.7",
+        "wpackagist-plugin/duplicate-post": "^3.2",
+        "wpackagist-plugin/email-log": "^2.2"
     },
     "extra": {
         "wordpress-install-dir": "app/wp",

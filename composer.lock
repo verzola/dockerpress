@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b880adee2126b3b1baf2afb64bbc9ce7",
+    "content-hash": "ca83c56a538f654f0b98d8d1a2950115",
     "packages": [
         {
             "name": "composer/installers",
@@ -253,6 +253,152 @@
                 "wordpress"
             ],
             "time": "2018-11-09T20:10:38+00:00"
+        },
+        {
+            "name": "wordplate/bem",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wordplate/bem.git",
+                "reference": "271592c3edf49200ff4df9b23720a49962ad8583"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wordplate/bem/zipball/271592c3edf49200ff4df9b23720a49962ad8583",
+                "reference": "271592c3edf49200ff4df9b23720a49962ad8583",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@vinkla.com",
+                    "homepage": "https://vinkla.com"
+                }
+            ],
+            "description": "A BEM (Block Element Modifier) plugin for WordPlate",
+            "keywords": [
+                "BEM",
+                "plugin",
+                "wordplate",
+                "wordpress"
+            ],
+            "time": "2018-10-04T11:47:25+00:00"
+        },
+        {
+            "name": "wordplate/mail",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wordplate/mail.git",
+                "reference": "3c28cdba9ef4dda7c2aff41fc077f1c71b7607e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wordplate/mail/zipball/3c28cdba9ef4dda7c2aff41fc077f1c71b7607e9",
+                "reference": "3c28cdba9ef4dda7c2aff41fc077f1c71b7607e9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Klaiber",
+                    "email": "hello@vinkla.com",
+                    "homepage": "https://vinkla.com"
+                }
+            ],
+            "description": "A mail plugin for WordPlate",
+            "keywords": [
+                "mail",
+                "plugin",
+                "wordplate",
+                "wordpress"
+            ],
+            "time": "2018-03-15T13:37:36+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/disable-emojis",
+            "version": "1.7.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/disable-emojis/",
+                "reference": "tags/1.7.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/disable-emojis.1.7.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/disable-emojis/"
+        },
+        {
+            "name": "wpackagist-plugin/duplicate-post",
+            "version": "3.2.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duplicate-post/",
+                "reference": "tags/3.2.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.2.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duplicate-post/"
+        },
+        {
+            "name": "wpackagist-plugin/email-log",
+            "version": "2.2.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/email-log/",
+                "reference": "tags/2.2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/email-log.2.2.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/email-log/"
         }
     ],
     "packages-dev": [],
