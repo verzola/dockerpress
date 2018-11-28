@@ -6,9 +6,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const StyleLintPlugin = require("stylelint-webpack-plugin");
 const devMode = process.env.NODE_ENV !== "production";
 const path = require("path");
-const webpack = require("webpack");
 
 module.exports = {
+  mode: devMode ? 'development' : 'production',
+  devtool: devMode ? "inline-source-map" : null,
   entry: {
     main: "./src/js/index.js"
   },
@@ -83,6 +84,16 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: ["file-loader"]
       }
+    ]
+  },
+  optimization: devMode ? {} : {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true
+      }),
+      new OptimizeCSSAssetsPlugin({})
     ]
   }
 };

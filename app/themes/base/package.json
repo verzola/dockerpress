@@ -1,11 +1,11 @@
 {
+  "private": true,
   "name": "base-theme",
   "version": "0.0.1",
-  "private": true,
   "scripts": {
     "format": "prettier --write \"**/*.{js,json,scss,md}\"",
-    "build": "NODE_ENV=production webpack --progress --env.production --config webpack.prod.js",
-    "start": "webpack --progress --config webpack.dev.js --watch"
+    "build": "NODE_ENV=production webpack --progress --hide-modules --env.production --config webpack.config.js",
+    "start": "NODE_ENV=development webpack --watch --progress --hide-modules --config webpack.config.js"
   },
   "author": "Gustavo Verzola <verzola@gmail.com>",
   "devDependencies": {
