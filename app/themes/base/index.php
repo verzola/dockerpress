@@ -16,9 +16,9 @@
                 <div class="c-article-card__content">
                     <header>
 
-                        <div class="c-article-card__meta clearfix">
-                            <img class="c-article-card__avatar" src="<?php echo get_avatar_url(get_the_author_meta('ID')) ?>" />
-                            <div class="c-article-card__author"><?php the_author() ?></div>
+                        <div class="c-author clearfix">
+                            <img class="c-author__avatar" src="<?php echo get_avatar_url(get_the_author_meta('ID')) ?>" />
+                            <div class="c-author__author"><?php the_author() ?></div>
                             <time class="c-article-card__time"><?php the_time( get_option( 'date_format' ) ) ?></time>
                         </div>
 

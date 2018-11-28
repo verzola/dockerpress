@@ -1,4 +1,6 @@
 .c-article {
-    background: #fff;
-    padding: 1rem;
+    &__content {
+        padding: 1rem;
+        background: #fff;
+    }
 }
