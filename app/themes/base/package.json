@@ -4,8 +4,8 @@
   "version": "0.0.1",
   "scripts": {
     "format": "prettier --write \"**/*.{js,json,scss,md}\"",
-    "build": "NODE_ENV=production webpack --progress --hide-modules --env.production --config webpack.config.js",
-    "start": "NODE_ENV=development webpack --watch --progress --hide-modules --config webpack.config.js"
+    "build": "NODE_ENV=production webpack --progress --hide-modules --env.production",
+    "start": "NODE_ENV=development webpack --watch --progress --hide-modules"
   },
   "author": "Gustavo Verzola <verzola@gmail.com>",
   "devDependencies": {
