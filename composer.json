@@ -11,7 +11,8 @@
     "config": {
       "preferred-install": "dist",
       "optimize-autoloader": true,
-      "sort-packages": true
+      "sort-packages": true,
+      "vendor-dir": "app/vendor"
     },
    "repositories": [
         {
