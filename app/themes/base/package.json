@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "format": "prettier --write \"**/*.{js,json,scss,md}\"",
-    "build": "NODE_ENV=production webpack --progress --config webpack.prod.js",
+    "build": "NODE_ENV=production webpack --progress --env.production --config webpack.prod.js",
     "start": "webpack --progress --config webpack.dev.js --watch"
   },
-  "author": "Gustavo Verzola",
+  "author": "Gustavo Verzola <verzola@gmail.com>",
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",

@@ -1,28 +1,28 @@
 .c-article-card {
-    background: #fff;
-    border-radius: 2px;
-    margin: .5rem;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
-    display: inline-block;
-    max-width: 300px;
+  background: #fff;
+  border-radius: 2px;
+  margin: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  max-width: 300px;
 
-    &__title {
-        margin: .5rem 0;
-    }
+  &__title {
+    margin: 0.5rem 0;
+  }
 
-    &__image {
-        border-top-left-radius: 2px;
-        border-top-right-radius: 2px;
-    }
+  &__image {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
 
-    &__content {
-        padding: 1rem;
-        padding-top: 0;
-    }
+  &__content {
+    padding: 1rem;
+    padding-top: 0;
+  }
 
-    &__excerpt {
-        p {
-            margin-top: 0;
-        }
+  &__excerpt {
+    p {
+      margin-top: 0;
     }
+  }
 }

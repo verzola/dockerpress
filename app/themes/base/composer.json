@@ -1,10 +1,10 @@
 {
-    "name": "verzola/base",
-    "authors": [
-        {
-            "name": "Gustavo Verzola",
-            "email": "verzola@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "verzola/base",
+  "authors": [
+    {
+      "name": "Gustavo Verzola",
+      "email": "verzola@gmail.com"
+    }
+  ],
+  "require": {}
 }

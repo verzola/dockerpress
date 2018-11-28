@@ -1,10 +1,10 @@
 .c-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 
-    &__item {
-        flex-basis: 300px;
-    }
+  &__item {
+    flex-basis: 300px;
+  }
 }
