@@ -80,8 +80,8 @@ module.exports = {
         use: ["file-loader"]
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
-        use: ["url-loader?limit=100000"]
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: ["file-loader"]
       }
     ]
   }
