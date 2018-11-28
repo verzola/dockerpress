@@ -24,7 +24,7 @@ services:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=wordpress
     volumes:
-      - ./mysql:/var/lib/mysql
+      - ./database/mysql:/var/lib/mysql
 
   dev:
     image: node:11
