@@ -54,6 +54,7 @@ define( 'DB_PASSWORD', env('WP_DB_PASSWORD', 'example') );
 define( 'DB_HOST',     env('WP_DB_HOST', 'mysql') );
 define( 'DB_CHARSET',  env('WP_DB_CHARSET', 'utf8') );
 
+define( 'WP_DEFAULT_THEME', 'base' );
 
 /* MySQL database table prefix. */
 $table_prefix = env('WP_TABLE_PREFIX', 'wp_');
