@@ -33,12 +33,8 @@ $ git clone https://github.com/verzola/dockerpress.git
 $ cd dockerpress
 $ cp .env.example .env
 $ docker-compose up -d
-Access http://localhost
+Access http://localhost:3000
 ```
-
-### Develop
-1. Run ./bin/dev
-2. Access http://localhost:3000
 
 ### Environment variables
 If you need to edit the default config, edit .env file.
