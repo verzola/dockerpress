@@ -6,6 +6,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const StyleLintPlugin = require("stylelint-webpack-plugin");
 const devMode = process.env.NODE_ENV !== "production";
 const path = require("path");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
   mode: devMode ? 'development' : 'production',
