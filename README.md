@@ -51,7 +51,7 @@ These helpers run things inside container, so you don't have to install on your 
 - ./bin/wp -> wrapper for wp-cli
 
 ### MailHog
-1. Run ./bin/mailhog
-2. Install and activate WP Mail SMTP by WPForms plugin
-3. Point your SMTP server to mailhog:1025
+1. Activate plugin Mail
+2. Run ./bin/mailhog
+3. Send an e-mail
 4. Access http://localhost:8025/
