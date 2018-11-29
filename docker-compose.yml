@@ -3,8 +3,7 @@ version: '3'
 services:
 
   wordpress:
-    image: app-wordpress
-    build: .
+    image: wordpress:php7.2
     env_file: .env
     ports:
       - 80:80
@@ -13,8 +12,8 @@ services:
       - ./app/mu-plugins:/var/www/html/wp-content/mu-plugins
       - ./app/plugins:/var/www/html/wp-content/plugins
       - ./app/uploads:/var/www/html/wp-content/uploads
-      - ./app/wp:/var/www/html/wp
       - ./app/wp-config.php:/var/www/html/wp-config.php
+      - ./app/wp:/var/www/html/wp
       - ./app/vendor:/var/www/html/vendor
 
   mysql:
