@@ -33,7 +33,8 @@
         "wordpress-install-dir": "app/wp",
         "installer-paths": {
             "app/mu-plugins/{$name}/": [
-                "type:wordpress-muplugin"
+                "type:wordpress-muplugin",
+                "wordplate/mail"
             ],
             "app/plugins/{$name}/": [
                 "type:wordpress-plugin"
