@@ -15,6 +15,7 @@ app/wp
 # Plugins
 app/plugins/**/*
 app/mu-plugins/**/*
+!app/mu-plugins/mu-autoloader.php
 !app/plugins/.gitkeep
 !app/mu-plugins/.gitkeep
 
