@@ -54,9 +54,7 @@ define( 'DB_PASSWORD', env('WP_DB_PASSWORD', 'example') );
 define( 'DB_HOST',     env('WP_DB_HOST', 'mysql') );
 define( 'DB_CHARSET',  env('WP_DB_CHARSET', 'utf8') );
 
-define( 'WP_DEFAULT_THEME', 'base' );
-
-/* MySQL database table prefix. */
+/* Table prefix. */
 $table_prefix = env('WP_TABLE_PREFIX', 'wp_');
 
 /* Authentication Unique Keys and Salts. */
@@ -70,6 +68,10 @@ define( 'SECURE_AUTH_SALT', env('WP_SECURE_AUTH_SALT') );
 define( 'LOGGED_IN_SALT',   env('WP_LOGGED_IN_SALT') );
 define( 'NONCE_SALT',       env('WP_NONCE_SALT') );
 
+/* Default theme after install */
+define( 'WP_DEFAULT_THEME', 'base' );
+
+define( 'FS_METHOD', 'direct' );
 
 /* Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
