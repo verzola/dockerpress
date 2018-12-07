@@ -5,7 +5,7 @@ Fast wordpress development environment based on Docker and Webpack
 
 If you find any problem, please [open an issue](https://github.com/verzola/dockerpress/issues/new).
 
-## Features
+## :trophy: Features
 - PHP 7.2
 - MySQL 5.7
 - Webpack 4
@@ -21,13 +21,11 @@ If you find any problem, please [open an issue](https://github.com/verzola/docke
 - Official Wordpress Docker image
 - Optimizes and minifies JS, CSS and images
 
-## Development
-
-### Requirements
+## :ballot_box_with_check: Requirements
 - :whale: [docker](https://www.docker.com/get-started)
 - :octopus: [docker-compose](https://docs.docker.com/compose/install/)
 
-### :scroll: Setup
+## :scroll: Setup
 ```sh
 $ git clone https://github.com/verzola/dockerpress.git
 $ cd dockerpress
@@ -36,10 +34,10 @@ $ docker-compose up -d
 Access http://localhost:3000
 ```
 
-### Environment variables
+## Environment variables
 If you need to edit the default config, edit .env file.
 
-### Helpers
+## Helpers
 These helpers run things inside container, so you don't have to install on your machine
 
 - ./bin/build -> build production webpack bundle
@@ -50,7 +48,7 @@ These helpers run things inside container, so you don't have to install on your 
 - ./bin/npm -> wrapper to npm package manager
 - ./bin/wp -> wrapper for wp-cli
 
-### MailHog
+##  :mailbox: MailHog
 1. Activate plugin Mail
 2. Run ./bin/mailhog
 3. Send an e-mail
@@ -63,4 +61,4 @@ Watch does not work on Docker Desktop on Windows.
 Contribuitions are welcome. If you find any problem or have a suggestion, please open an issue.
 
 ## :memo: TODO
-- [ ] 
+- [ ] Foo
