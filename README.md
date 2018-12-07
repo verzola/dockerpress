@@ -4,19 +4,19 @@ Fast wordpress development environment based on Docker and Webpack.
 **WARNING**: This tool is under development. Use at your own risk.  :warning:
 
 ## :trophy: Features
+- :whale: Official Wordpress Docker image
 - :elephant: PHP 7.2
 - :dolphin: MySQL 5.7
 - :spider_web: :package: Webpack 4
 - :eyeglasses: SCSS
 - :mailbox: MailHog
 - :lipstick: Prettier
+- :no_entry_sign: :hankey: Stylelint
+- :no_entry_sign: :hankey: ESLint
+- :battery: Comes with base theme pre-configured
 - BrowserSync
 - Autoprefixer
-- Stylelint
-- ESLint
 - WP-CLI
-- Comes with base theme pre-configured
-- Official Wordpress Docker image
 - Optimizes and minifies JS, CSS and images
 
 ## :ballot_box_with_check: Requirements
