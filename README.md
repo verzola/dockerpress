@@ -1,20 +1,20 @@
 # :whale: :newspaper: DockerPress
-Fast wordpress development environment based on Docker and Webpack
+Fast wordpress development environment based on Docker and Webpack.
 
 **WARNING**: This tool is under development. Use at your own risk.  :warning:
 
 ## :trophy: Features
-- PHP 7.2
-- MySQL 5.7
-- Webpack 4
-- SCSS
+- :elephant: PHP 7.2
+- :dolphin: MySQL 5.7
+- :spider_web: :package: Webpack 4
+- :eyeglasses: SCSS
+- :mailbox: MailHog
+- :lipstick: Prettier
 - BrowserSync
 - Autoprefixer
 - Stylelint
 - ESLint
-- Prettier
 - WP-CLI
-- MailHog
 - Comes with base theme pre-configured
 - Official Wordpress Docker image
 - Optimizes and minifies JS, CSS and images
@@ -25,17 +25,25 @@ Fast wordpress development environment based on Docker and Webpack
 
 ## :scroll: Setup
 ```sh
+# clone repo
 $ git clone https://github.com/verzola/dockerpress.git
+
+# enter in directory
 $ cd dockerpress
+
+# copy env example file
 $ cp .env.example .env
+
+# start compose
 $ docker-compose up -d
-Access http://localhost:3000
+
+Access http://localhost:3000 and setup Wordpress.
 ```
 
 ## Environment variables
 If you need to edit the default config, edit .env file.
 
-## Helpers
+## :robot: Helpers
 These helpers run things inside container, so you don't have to install on your machine
 
 - ./bin/build -> build production webpack bundle
