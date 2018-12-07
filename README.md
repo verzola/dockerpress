@@ -86,10 +86,10 @@ These helpers run things inside container, so you don't have to install on your 
 4. Access http://localhost:8025/
 
 ## :warning: Known issues
-Watch does not work on Docker Desktop on Windows.
+- Watch does not work on Docker Desktop on Windows.
 
 ## :raising_hand_woman: Contributing
 Contribuitions are welcome. If you find any problem or have a suggestion, please [open an issue](https://github.com/verzola/dockerpress/issues/new)
 
 ## :memo: TODO
-- [ ] Foo
+- [ ] Install Composer dependencies (including WP itself)
