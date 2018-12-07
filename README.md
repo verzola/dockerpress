@@ -42,6 +42,31 @@ Access http://localhost:3000 and setup Wordpress.
 
 ## :deciduous_tree: Environment variables
 If you need to edit the default config, edit .env file.
+```sh
+# Inject CSS via JS
+BROWSERSYNC=false
+
+# Wordpress Database Configuration
+WP_DB_HOST=mysql
+WP_DB_USER=root
+WP_DB_PASSWORD=root
+WP_DB_NAME=wordpress
+WP_TABLE_PREFIX=wp_
+
+# Wordpress Keys Configuration
+# Use this: https://wordplate.github.io/salt/ and append WP_.
+WP_AUTH_KEY=dev
+WP_SECURE_AUTH_KEY=dev
+WP_LOGGED_IN_KEY=dev
+WP_NONCE_KEY=dev
+WP_AUTH_SALT=dev
+WP_SECURE_AUTH_SALT=dev
+WP_LOGGED_IN_SALT=dev
+WP_NONCE_SALT=dev
+
+# Debug mode on
+WP_DEBUG=true
+```
 
 ## :robot: Helpers
 These helpers run things inside container, so you don't have to install on your machine
