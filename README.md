@@ -1,9 +1,7 @@
 # :whale: :newspaper: DockerPress
 Fast wordpress development environment based on Docker and Webpack
 
-**WARNING**: :warning: This tool is under development. Use at your own risk.
-
-If you find any problem, please [open an issue](https://github.com/verzola/dockerpress/issues/new).
+**WARNING**: This tool is under development. Use at your own risk.  :warning:
 
 ## :trophy: Features
 - PHP 7.2
@@ -58,7 +56,7 @@ These helpers run things inside container, so you don't have to install on your 
 Watch does not work on Docker Desktop on Windows.
 
 ## :raising_hand_woman: Contributing
-Contribuitions are welcome. If you find any problem or have a suggestion, please open an issue.
+Contribuitions are welcome. If you find any problem or have a suggestion, please [open an issue](https://github.com/verzola/dockerpress/issues/new)
 
 ## :memo: TODO
 - [ ] Foo
