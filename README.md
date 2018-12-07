@@ -40,7 +40,7 @@ $ docker-compose up -d
 Access http://localhost:3000 and setup Wordpress.
 ```
 
-## Environment variables
+## :deciduous_tree: Environment variables
 If you need to edit the default config, edit .env file.
 
 ## :robot: Helpers
