@@ -1,7 +1,7 @@
-# DockerPress
+# :whale: :newspaper: DockerPress
 Fast wordpress development environment based on Docker and Webpack
 
-**WARNING**: This tool is under development. Use at your own risk.
+**WARNING**: :warning: This tool is under development. Use at your own risk.
 
 If you find any problem, please [open an issue](https://github.com/verzola/dockerpress/issues/new).
 
@@ -24,10 +24,10 @@ If you find any problem, please [open an issue](https://github.com/verzola/docke
 ## Development
 
 ### Requirements
-- [docker](https://www.docker.com/get-started)
-- [docker-compose](https://docs.docker.com/compose/install/)
+- :whale: [docker](https://www.docker.com/get-started)
+- :octopus: [docker-compose](https://docs.docker.com/compose/install/)
 
-### Setup
+### :scroll: Setup
 ```sh
 $ git clone https://github.com/verzola/dockerpress.git
 $ cd dockerpress
@@ -55,3 +55,12 @@ These helpers run things inside container, so you don't have to install on your 
 2. Run ./bin/mailhog
 3. Send an e-mail
 4. Access http://localhost:8025/
+
+## :warning: Known issues
+Watch does not work on Docker Desktop on Windows.
+
+## :raising_hand_woman: Contributing
+Contribuitions are welcome. If you find any problem or have a suggestion, please open an issue.
+
+## :memo: TODO
+- [ ] 
