@@ -72,12 +72,14 @@ WP_DEBUG=true
 These helpers run things inside container, so you don't have to install on your machine
 
 - ./bin/build -> build production webpack bundle
-- ./bin/dev -> starts development environment
+- ./bin/dev -> attach to browsersync container
 - ./bin/dump -> create a database dump in database/dump.sql
 - ./bin/mailhog -> starts mailhog service
 - ./bin/mysql -> wrapper to connect to mysql db
 - ./bin/npm -> wrapper to npm package manager
 - ./bin/wp -> wrapper for wp-cli
+- ./bin/composer -> php composer
+- ./bin/reset -> delete all containers, mysql folder and start again
 
 ##  :mailbox: MailHog
 1. Activate plugin Mail
