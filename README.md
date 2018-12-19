@@ -1,5 +1,5 @@
 # :whale: :newspaper: DockerPress
-Fast wordpress development environment based on Docker and Webpack.
+Fast Wordpress development environment based on Docker and Webpack.
 
 **WARNING**: This tool is under development. Use at your own risk.  :warning:
 
@@ -112,4 +112,3 @@ These helpers run things inside containers, so you don't have to install anythin
 Contribuitions are welcome. If you find any problem or have a suggestion, please [open an issue](https://github.com/verzola/dockerpress/issues/new)
 
 ## :memo: TODO <a id="todo"></a>
-- [ ]
