@@ -3,7 +3,19 @@ Fast wordpress development environment based on Docker and Webpack.
 
 **WARNING**: This tool is under development. Use at your own risk.  :warning:
 
-## :trophy: Features
+## Table of contents
+
+1. [Features](#features)
+2. [Requirements](#requirements)
+3. [Setup](#setup)
+4. [Environment variables](#env)
+5. [Helpers](#helpers)
+6. [Mail](#mail)
+7. [Known issues](#known-issues)
+8. [Contribuiting](#contrib)
+9. [TODO](#todo)
+
+## :trophy: Features <a id="features"></a>
 - :whale: Official Wordpress Docker image
 - :elephant: PHP 7.2
 - :dolphin: MySQL 5.7
@@ -19,11 +31,11 @@ Fast wordpress development environment based on Docker and Webpack.
 - WP-CLI
 - Optimizes and minifies JS, CSS and images
 
-## :ballot_box_with_check: Requirements
+## :ballot_box_with_check: Requirements <a id="requirements"></a>
 - :whale: [docker](https://www.docker.com/get-started)
 - :octopus: [docker-compose](https://docs.docker.com/compose/install/)
 
-## :scroll: Setup
+## :scroll: Setup <a id="setup"></a>
 ```sh
 # clone repo
 $ git clone https://github.com/verzola/dockerpress.git
@@ -40,7 +52,7 @@ $ docker-compose up -d
 Access http://localhost:3000 and setup Wordpress.
 ```
 
-## :deciduous_tree: Environment variables
+## :deciduous_tree: Environment variables <a id="env"></a>
 If you need to edit the default config, edit .env file.
 ```sh
 # Inject CSS via JS
@@ -68,7 +80,7 @@ WP_NONCE_SALT=dev
 WP_DEBUG=true
 ```
 
-## :robot: Helpers
+## :robot: Helpers <a id="helpers"></a>
 These helpers run things inside container, so you don't have to install on your machine
 
 - ./bin/build -> build production webpack bundle
@@ -81,17 +93,17 @@ These helpers run things inside container, so you don't have to install on your 
 - ./bin/composer -> php composer
 - ./bin/reset -> delete all containers, mysql folder and start again
 
-##  :mailbox: MailHog
+##  :mailbox: MailHog <a id="mail"></a>
 1. Activate plugin Mail
 2. Run ./bin/mailhog
 3. Send an e-mail
 4. Access http://localhost:8025/
 
-## :warning: Known issues
+## :warning: Known issues <a id="known-issues"></a>
 - Watch does not work on Docker Desktop on Windows.
 
-## :raising_hand_woman: Contributing
+## :raising_hand_woman: Contributing <a id="contrib"></a>
 Contribuitions are welcome. If you find any problem or have a suggestion, please [open an issue](https://github.com/verzola/dockerpress/issues/new)
 
-## :memo: TODO
+## :memo: TODO <a id="todo"></a>
 - [ ] Install Composer dependencies (including WP itself)
