@@ -92,7 +92,7 @@ These helpers run things inside containers, so you don't have to install anythin
 - ./bin/composer -> php composer
 - ./bin/reset -> delete all containers, mysql, vendor and wp folder
 
-##  Plugins <a id="plugins"></a>
+## :electric_plug: Plugins <a id="plugins"></a>
 - Base plugin for general project config/functions
 - [Plate](https://github.com/wordplate/plate)
 - [BEM](https://github.com/wordplate/bem)
