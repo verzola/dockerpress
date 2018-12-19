@@ -10,10 +10,11 @@ Fast wordpress development environment based on Docker and Webpack.
 3. [Setup](#setup)
 4. [Environment variables](#env)
 5. [Helpers](#helpers)
-6. [Mail](#mail)
-7. [Known issues](#known-issues)
-8. [Contribuiting](#contrib)
-9. [TODO](#todo)
+7. [Mail](#mail)
+8. [Plugins](#plugins)
+9. [Known issues](#known-issues)
+10. [Contribuiting](#contrib)
+11. [TODO](#todo)
 
 ## :trophy: Features <a id="features"></a>
 - :whale: Official Wordpress Docker image
@@ -78,7 +79,7 @@ WP_DEBUG=true
 ```
 
 ## :robot: Helpers <a id="helpers"></a>
-These helpers run things inside container, so you don't have to install on your machine
+These helpers run things inside containers, so you don't have to install anything besides Docker on your machine
 
 - ./bin/build -> build production webpack bundle
 - ./bin/dev -> attach to browsersync container
@@ -88,13 +89,21 @@ These helpers run things inside container, so you don't have to install on your 
 - ./bin/npm -> wrapper to npm package manager
 - ./bin/wp -> wrapper for wp-cli
 - ./bin/composer -> php composer
-- ./bin/reset -> delete all containers, mysql, vendor, wp folder and setup again
+- ./bin/reset -> delete all containers, mysql, vendor and wp folder
+
+##  Plugins <a id="plugins"></a>
+- Base plugin for general project config/functions
+- [Plate](https://github.com/wordplate/plate)
+- [BEM](https://github.com/wordplate/bem)
+- [Mail](https://github.com/wordplate/mail)
+- [Disable Emojis](https://br.wordpress.org/plugins/disable-emojis/)
+- [Duplicate Post](https://br.wordpress.org/plugins/duplicate-post/)
+- [Email Log](https://wordpress.org/plugins/email-log/)
 
 ##  :mailbox: MailHog <a id="mail"></a>
-1. Activate plugin Mail
-2. Run ./bin/mailhog
-3. Send an e-mail
-4. Access http://localhost:8025/
+1. Run ./bin/mailhog
+2. Send an e-mail
+3. Access http://localhost:8025
 
 ## :warning: Known issues <a id="known-issues"></a>
 - Watch does not work on Docker Desktop on Windows.
@@ -103,4 +112,4 @@ These helpers run things inside container, so you don't have to install on your 
 Contribuitions are welcome. If you find any problem or have a suggestion, please [open an issue](https://github.com/verzola/dockerpress/issues/new)
 
 ## :memo: TODO <a id="todo"></a>
-- [ ] 
+- [ ]

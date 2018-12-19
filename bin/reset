@@ -4,4 +4,3 @@ docker-compose rm
 sudo rm -rf database/mysql
 sudo rm -rf app/vendor
 sudo rm -rf app/wp
-./bin/setup

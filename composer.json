@@ -26,6 +26,7 @@
         "johnpbloch/wordpress-core": "^5.0",
         "wordplate/bem": "^0.3.0",
         "wordplate/mail": "^4.0",
+        "wordplate/plate": "^4.0",
         "wpackagist-plugin/disable-emojis": "^1.7",
         "wpackagist-plugin/duplicate-post": "^3.2",
         "wpackagist-plugin/email-log": "^2.2"
