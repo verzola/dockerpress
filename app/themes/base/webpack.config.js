@@ -10,7 +10,7 @@ const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-  mode: devMode ? 'development' : 'production',
+  mode: devMode ? "development" : "production",
   devtool: devMode ? "inline-source-map" : false,
   entry: {
     main: "./src/js/index.js"
@@ -88,14 +88,16 @@ module.exports = {
       }
     ]
   },
-  optimization: devMode ? {} : {
-    minimizer: [
-      new UglifyJsPlugin({
-        cache: true,
-        parallel: true,
-        sourceMap: true
-      }),
-      new OptimizeCSSAssetsPlugin({})
-    ]
-  }
+  optimization: devMode
+    ? {}
+    : {
+        minimizer: [
+          new UglifyJsPlugin({
+            cache: true,
+            parallel: true,
+            sourceMap: true
+          }),
+          new OptimizeCSSAssetsPlugin({})
+        ]
+      }
 };

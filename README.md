@@ -86,9 +86,11 @@ These helpers run things inside containers, so you don't have to install anythin
 - ./bin/dump -> create a database dump in database/dump.sql
 - ./bin/mailhog -> starts mailhog service
 - ./bin/mysql -> wrapper to connect to mysql db
-- ./bin/npm -> wrapper to npm package manager
+- ./bin/npm -> wrapper for npm package manager
+- ./bin/yarn -> wrapper for yarn package manager
 - ./bin/wp -> wrapper for wp-cli
-- ./bin/composer -> php composer
+- ./bin/composer -> wrapper for composer
+- ./bin/format -> formats base theme code with prettier
 - ./bin/reset -> delete all containers, mysql, vendor and wp folder
 
 ##  Plugins <a id="plugins"></a>
