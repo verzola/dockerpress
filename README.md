@@ -1,5 +1,5 @@
 # :whale: :newspaper: DockerPress
-Fast wordpress development environment based on Docker and Webpack.
+Fast Wordpress development environment based on Docker and Webpack.
 
 **WARNING**: This tool is under development. Use at your own risk.  :warning:
 
@@ -83,17 +83,18 @@ These helpers run things inside containers, so you don't have to install anythin
 
 - ./bin/build -> build production webpack bundle
 - ./bin/dev -> attach to browsersync container
+- ./bin/wp -> wrapper for wp-cli
+- ./bin/mysql -> wrapper to connect to mysql shell
 - ./bin/dump -> create a database dump in database/dump.sql
 - ./bin/mailhog -> starts mailhog service
-- ./bin/mysql -> wrapper to connect to mysql db
-- ./bin/npm -> wrapper for npm package manager
 - ./bin/yarn -> wrapper for yarn package manager
-- ./bin/wp -> wrapper for wp-cli
-- ./bin/composer -> wrapper for composer
+- ./bin/npm -> wrapper for npm package manager
+- ./bin/composer -> wrapper for composer package manager
 - ./bin/format -> formats base theme code with prettier
 - ./bin/reset -> delete all containers, mysql, vendor and wp folder
+- ./bin/setup -> setup dockerpress and startup containers
 
-##  Plugins <a id="plugins"></a>
+## :electric_plug: Plugins <a id="plugins"></a>
 - Base plugin for general project config/functions
 - [Plate](https://github.com/wordplate/plate)
 - [BEM](https://github.com/wordplate/bem)
@@ -114,4 +115,3 @@ These helpers run things inside containers, so you don't have to install anythin
 Contribuitions are welcome. If you find any problem or have a suggestion, please [open an issue](https://github.com/verzola/dockerpress/issues/new)
 
 ## :memo: TODO <a id="todo"></a>
-- [ ]
