@@ -22,7 +22,8 @@
     ],
     "require": {
         "composer/installers": "~1.0",
-        "johnpbloch/wordpress": "^4.9",
+        "johnpbloch/wordpress": "^5.0",
+        "johnpbloch/wordpress-core": "^5.0",
         "wordplate/bem": "^0.3.0",
         "wordplate/mail": "^4.0",
         "wpackagist-plugin/disable-emojis": "^1.7",
