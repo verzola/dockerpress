@@ -44,7 +44,7 @@ add_action('wp_enqueue_scripts', function () {
             );
         }
 
-        if (pathinfo($file, PATHINFO_EXTENSION) === 'css' && !env('BROWSERSYNC')) {
+        if (pathinfo($file, PATHINFO_EXTENSION) === 'css' && !env('INJECT_CSS')) {
             wp_enqueue_style(
                 $name,
                 get_template_directory_uri() . '/dist/' . $fullName,

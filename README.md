@@ -47,14 +47,15 @@ $ cd dockerpress
 # run setup script
 $ ./bin/setup
 
-Wait a few seconds and access http://localhost:3000 to setup Wordpress.
+Wait a few seconds and open http://localhost to setup Wordpress.
+Open http://localhost:3000 to develop using BrowserSync.
 ```
 
 ## :deciduous_tree: Environment variables <a id="env"></a>
 If you need to edit the default config, edit .env file.
 ```sh
 # Inject CSS via JS
-BROWSERSYNC=false
+INJECT_CSS=true
 
 # Wordpress Database Configuration
 WP_DB_HOST=mysql
