@@ -1,0 +1,5 @@
+#!/bin/sh
+docker-compose kill
+docker-compose rm
+sudo rm -rf database/mysql
+docker-compose up -d
