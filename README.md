@@ -85,8 +85,9 @@ These helpers run things inside containers, so you don't have to install anythin
 - ./bin/dev -> attach to browsersync container
 - ./bin/dump -> create a database dump in database/dump.sql
 - ./bin/mailhog -> starts mailhog service
-- ./bin/mysql -> wrapper to connect to mysql db
-- ./bin/npm -> wrapper to npm package manager
+- ./bin/mysql -> wrapper to connect to mysql shell
+- ./bin/npm -> wrapper to use npm
+- ./bin/yarn -> wrapper to use yarn
 - ./bin/wp -> wrapper for wp-cli
 - ./bin/composer -> php composer
 - ./bin/reset -> delete all containers, mysql, vendor and wp folder
