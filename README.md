@@ -43,13 +43,10 @@ $ git clone https://github.com/verzola/dockerpress.git
 # enter in directory
 $ cd dockerpress
 
-# copy env example file
-$ cp .env.example .env
+# run setup script
+$ ./bin/setup
 
-# start compose
-$ docker-compose up -d
-
-Access http://localhost:3000 and setup Wordpress.
+Wait a few seconds and access http://localhost:3000 to setup Wordpress.
 ```
 
 ## :deciduous_tree: Environment variables <a id="env"></a>
@@ -91,7 +88,7 @@ These helpers run things inside container, so you don't have to install on your 
 - ./bin/npm -> wrapper to npm package manager
 - ./bin/wp -> wrapper for wp-cli
 - ./bin/composer -> php composer
-- ./bin/reset -> delete all containers, mysql folder and start again
+- ./bin/reset -> delete all containers, mysql, vendor, wp folder and setup again
 
 ##  :mailbox: MailHog <a id="mail"></a>
 1. Activate plugin Mail
@@ -106,4 +103,4 @@ These helpers run things inside container, so you don't have to install on your 
 Contribuitions are welcome. If you find any problem or have a suggestion, please [open an issue](https://github.com/verzola/dockerpress/issues/new)
 
 ## :memo: TODO <a id="todo"></a>
-- [ ] Install Composer dependencies (including WP itself)
+- [ ] 

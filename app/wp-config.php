@@ -44,7 +44,7 @@ if (isset($_SERVER['HTTP_HOST'])) {
     define('HTTP_HOST', 'localhost');
 }
 
-define('WP_SITEURL', $protocol_to_use . HTTP_HOST);
+define('WP_SITEURL', $protocol_to_use . HTTP_HOST . '/wp');
 define('WP_HOME', $protocol_to_use . HTTP_HOST);
 
 /* MySQL settings */
@@ -73,9 +73,17 @@ define( 'WP_DEFAULT_THEME', 'base' );
 
 define( 'FS_METHOD', 'direct' );
 
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
+
+define( 'WP_AUTO_UPDATE_CORE', true );
+
+define( 'WP_CONTENT_DIR', dirname(__FILE__) );
+
+define( 'WP_CONTENT_URL', WP_HOME );
+
 /* Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+	define('ABSPATH', dirname(__FILE__) . '/wp/' );
 
 /* Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
+require_once(ABSPATH . '/wp-settings.php');

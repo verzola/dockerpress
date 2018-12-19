@@ -3,16 +3,12 @@ version: '3'
 services:
 
   wordpress:
-    image: wordpress:5.0.0-apache
+    image: wordpress:5-apache
     env_file: .env
     ports:
       - 80:80
     volumes:
-      - ./app/themes:/var/www/html/wp-content/themes
-      - ./app/mu-plugins:/var/www/html/wp-content/mu-plugins
-      - ./app/plugins:/var/www/html/wp-content/plugins
-      - ./app/uploads:/var/www/html/wp-content/uploads
-      - ./app/wp-config.php:/var/www/html/wp-config.php
+      - ./app/:/var/www/html
 
   mysql:
     image: mysql:5.7

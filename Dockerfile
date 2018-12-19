@@ -12,3 +12,4 @@ COPY ./app/plugins /var/www/html/wp-content/plugins
 COPY ./app/wp-config.php /var/www/html/wp-config.php
 COPY --from=0 /app /var/www/html/wp-content/themes/base
 COPY ./app/uploads /var/www/html/wp-content/uploads
+# @TODO: Install composer dependencies

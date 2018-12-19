@@ -2,4 +2,6 @@
 docker-compose kill
 docker-compose rm
 sudo rm -rf database/mysql
-docker-compose up -d
+sudo rm -rf app/vendor
+sudo rm -rf app/wp
+./bin/setup
