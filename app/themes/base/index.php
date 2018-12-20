@@ -15,9 +15,9 @@
                     <?php the_post_thumbnail('medium', ['class' => 'c-card__image']) ?>
 
                     <div class="c-author clearfix">
-                        <img class="c-author__avatar" src="<?php echo get_avatar_url(get_the_author_meta('ID')) ?>" />
+                        <img class="c-author__photo" src="<?php echo get_avatar_url(get_the_author_meta('ID')) ?>" />
 
-                        <div class="c-author__author"><?php the_author() ?></div>
+                        <div class="c-author__name"><?php the_author() ?></div>
 
                         <time class="c-card__time"><?php the_time( get_option( 'date_format' ) ) ?></time>
                     </div>
@@ -25,7 +25,7 @@
 
                 <div class="c-card__content">
                     <header>
-                        <h1 class="c-card__title"><?php the_title() ?></h1>
+                        <h2 class="c-card__title"><?php the_title() ?></h2>
                     </header>
 
                     <div class="c-card__excerpt"><?php the_excerpt() ?></div>
