@@ -4,4 +4,21 @@
 
 .l-footer {
   background: #111;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem 0;
+
+  .container {
+    display: flex;
+  }
+
+  &__social {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-left: auto;
+  }
+
+  h3 {
+    margin: 0;
+  }
 }
