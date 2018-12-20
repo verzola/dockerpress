@@ -7,6 +7,11 @@
   display: flex;
   padding: 1rem;
   color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
 
   &__brand {
     font-weight: bold;
@@ -26,7 +31,7 @@
       bottom: 0;
       background: #3498db;
       padding-top: 3rem;
-      z-index: 999;
+      z-index: 1000;
 
       &--open {
         right: 0;
@@ -34,7 +39,7 @@
 
       a {
         color: #fff;
-        padding: 1rem;
+        padding: 2rem;
         text-align: center;
         display: block;
 
@@ -52,7 +57,7 @@
 
   .hamburger {
     margin-left: auto;
-    z-index: 1000;
+    z-index: 1001;
   }
 
   ul {
