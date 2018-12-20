@@ -13,6 +13,10 @@
  */
 define('WP_USE_THEMES', true);
 
+// Load composer autoloader
+require_once __DIR__ . '/vendor/autoload.php';
+
+// Load custom wp-config.php
 require_once __DIR__ . '/wp-config.php';
 
 /** Loads the WordPress Environment and Template */
