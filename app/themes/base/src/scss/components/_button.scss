@@ -1,17 +1,20 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
 .c-button {
-  border-radius: 2px;
-  background: $brand-color;
+  background: #3498db;
+  border-radius: 30px;
+  border: 0;
   color: #fff;
-  padding: 0.5rem 0.75rem;
-  font-weight: bold;
+  cursor: pointer;
   display: inline-block;
+  font-weight: bold;
+  line-height: 1.45;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: background 150ms;
 
-  &:hover {
+  @include on-event {
+    background: lighten(#3498db, 5%);
     color: #fff;
+    outline: 0;
     text-decoration: none;
-    background: lighten($brand-color, 3%);
   }
 }
