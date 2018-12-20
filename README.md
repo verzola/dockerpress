@@ -18,6 +18,7 @@ Fast Wordpress development environment based on Docker and Webpack.
 
 ## :trophy: Features <a id="features"></a>
 - :whale: Official Wordpress Docker image
+- :newspaper: Wordpress 5.0.2
 - :elephant: PHP 7.2
 - :dolphin: MySQL 5.7
 - :musical_score: Composer
