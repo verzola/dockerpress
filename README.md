@@ -38,6 +38,14 @@ Fast Wordpress development environment based on Docker and Webpack.
 - :whale: [docker](https://www.docker.com/get-started)
 - :octopus: [docker-compose](https://docs.docker.com/compose/install/)
 
+## :fast_forward: Quickstart
+If you meet all the requirements, you can use this quickstart script.
+
+It clones the repo, enter in it, runs the setup script, and then opens http://localhost.
+```sh
+$ curl https://raw.githubusercontent.com/verzola/dockerpress/master/bin/quickstart | bash
+```
+
 ## :scroll: Setup <a id="setup"></a>
 ```sh
 # clone repo
