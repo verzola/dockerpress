@@ -4,19 +4,24 @@
 
 .l-header {
   background: #111;
-  display: flex;
-  padding: 1rem;
   color: #fff;
-  position: fixed;
-  top: 0;
-  right: 0;
+  display: flex;
   left: 0;
+  padding: 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
   z-index: 999;
 
   &__brand {
-    font-weight: bold;
     color: #fff;
+    font-weight: bold;
     line-height: 1.5;
+
+    @include on-event {
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   .hamburger {

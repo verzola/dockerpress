@@ -27,10 +27,10 @@
             <p>Nothing to see.</p>
         </article>
 
-    <?php endif; ?>
+    <?php endif ?>
 
     <?php get_sidebar() ?>
 
 </main>
 
-<?php get_footer();
+<?php get_footer() ?>

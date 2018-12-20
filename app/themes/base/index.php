@@ -52,7 +52,7 @@
                 <p>Nothing to see.</p>
             </article>
 
-        <?php endif; ?>
+        <?php endif ?>
 
     </div>
 
