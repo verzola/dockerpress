@@ -2,4 +2,4 @@
 git clone https://github.com/verzola/dockerpress.git
 cd dockerpress
 ./bin/setup
-sleep 10s && sensible-browser http://localhost
+sleep 15s && sensible-browser http://localhost
