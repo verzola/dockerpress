@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<main class="l-main" role="main">
+<main role="main">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post() ?>
 
@@ -13,7 +13,6 @@
                     <div class="c-author__name"><?php the_author() ?></div>
                     <time class="c-article__time"><?php the_time( get_option( 'date_format' ) ) ?></time>
                 </div>
-
             </header>
 
             <div class="c-article__content container">

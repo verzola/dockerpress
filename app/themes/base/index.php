@@ -4,7 +4,7 @@
     <h1><i class="fas fa-newspaper"></i> Posts</h1>
 </div>
 
-<main class="l-main" role="main">
+<main role="main">
 
     <div class="container c-grid">
 
