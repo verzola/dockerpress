@@ -51,6 +51,9 @@ $ ./bin/setup
 
 Wait a few seconds and open http://localhost to setup Wordpress.
 Open http://localhost:3000 to develop using BrowserSync.
+
+# after initial setup, run this command to start the containers
+$ ./bin/start
 ```
 
 ## :deciduous_tree: Environment variables <a id="env"></a>
@@ -96,6 +99,7 @@ These helpers run things inside containers, so you don't have to install anythin
 - ./bin/format -> formats base theme code with prettier
 - ./bin/reset -> delete all containers, mysql, vendor and wp folder
 - ./bin/setup -> setup dockerpress and startup containers
+- ./bin/start -> start up containers
 
 ## :electric_plug: Plugins <a id="plugins"></a>
 - Base plugin for general project config/functions
