@@ -88,7 +88,7 @@ WP_DEBUG=true
 These helpers run things inside containers, so you don't have to install anything besides Docker on your machine
 
 - ./bin/build -> build production webpack bundle
-- ./bin/dev -> attach to browsersync container
+- ./bin/logs -> attach to browsersync container
 - ./bin/wp -> wrapper for wp-cli
 - ./bin/mysql -> wrapper to connect to mysql shell
 - ./bin/dump -> create a database dump in database/dump.sql
