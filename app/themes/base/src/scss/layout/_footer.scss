@@ -4,14 +4,13 @@
 
 .l-footer {
   background: #111;
+  bottom: 0;
   color: #fff;
   font-weight: bold;
+  left: 0;
   padding: 1rem 0;
-
   position: absolute;
   right: 0;
-  bottom: 0;
-  left: 0;
 
   .container {
     display: flex;
@@ -23,7 +22,8 @@
     margin-left: auto;
   }
 
-  h3 {
+  &__brand {
     margin: 0;
+    margin-top: .75rem;
   }
 }
