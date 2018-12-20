@@ -9,8 +9,8 @@
                 <h1><?php the_title() ?></h1>
 
                 <div class="c-author clearfix">
-                    <img class="c-author__avatar" src="<?php echo get_avatar_url(get_the_author_meta('ID')) ?>" />
-                    <div class="c-author__author"><?php the_author() ?></div>
+                    <img class="c-author__photo" src="<?php echo get_avatar_url(get_the_author_meta('ID')) ?>" />
+                    <div class="c-author__name"><?php the_author() ?></div>
                     <time class="c-article__time"><?php the_time( get_option( 'date_format' ) ) ?></time>
                 </div>
 
