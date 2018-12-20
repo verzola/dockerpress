@@ -8,7 +8,6 @@
     <?php wp_head() ?>
 </head>
 <body class="page-not-found">
-
     <h1>404</h1>
     <h2>Not found <span>:(</span></h2>
     <p>Sorry, but the page you are trying to view does not exist.</p>

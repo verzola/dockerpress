@@ -44,14 +44,13 @@
         display: block;
 
         &:hover {
-          background: rgba(#fff, .1);
+          background: rgba(#fff, 0.1);
         }
       }
 
       ul {
         flex-direction: column;
       }
-
     }
   }
 
@@ -79,5 +78,4 @@
       color: #fff;
     }
   }
-
 }

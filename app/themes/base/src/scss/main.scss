@@ -22,7 +22,7 @@ $hamburger-hover-use-filter: false;
 $hamburger-hover-filter: opacity(50%);
 $hamburger-active-hover-filter: $hamburger-hover-filter;
 $hamburger-types: (squeeze);
-@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+@import "~hamburgers/_sass/hamburgers/hamburgers.scss";
 
 // 3. Base stuff
 @import "base/base";
