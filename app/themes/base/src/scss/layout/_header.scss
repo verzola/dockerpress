@@ -22,7 +22,6 @@
   &__nav {
     margin-left: auto;
 
-    @media (max-width: 768px) {
       transition: 500ms all;
       width: 300px;
       position: fixed;
@@ -51,7 +50,6 @@
       ul {
         flex-direction: column;
       }
-    }
   }
 
   .hamburger {

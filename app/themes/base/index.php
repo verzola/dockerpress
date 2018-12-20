@@ -1,10 +1,10 @@
 <?php get_header() ?>
 
-<main class="l-main" role="main">
+<div class="c-hero">
+    <h1><i class="fas fa-newspaper"></i> Posts</h1>
+</div>
 
-    <header class="c-hero">
-        <h1><i class="fas fa-newspaper"></i> Posts</h1>
-    </header>
+<main class="l-main" role="main">
 
     <div class="container c-grid">
 
@@ -27,8 +27,8 @@
 
                 <div class="c-card__content">
                     <header>
-
                         <h2 class="c-card__title"><?php the_title() ?></h2>
+
                         <?php if (!has_post_thumbnail()): ?>
                             <div class="c-author clearfix">
                                 <img class="c-author__photo" src="<?php echo get_avatar_url(get_the_author_meta('ID')) ?>" />
