@@ -30,7 +30,8 @@ module.exports = {
         proxy: "http://wordpress",
         files: ["**/*.php"],
         open: false,
-        minify: false
+        minify: false,
+        notify: false
       },
       {
         injectCss: true
