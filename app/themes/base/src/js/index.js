@@ -1,10 +1,8 @@
 import "../scss/main.scss";
-import $ from "jquery";
 import "@fortawesome/fontawesome-free/js/all.js";
+import $ from "jquery";
 
-$(document).ready(() => console.log("hello world"));
-
-$(".hamburger").click(function() {
+$(".js-hamburger").click(function() {
   $(this).toggleClass("is-active");
-  $(".l-header__nav").toggleClass("l-header__nav--open");
+  $(".c-offcanvas").toggleClass("c-offcanvas--open");
 });

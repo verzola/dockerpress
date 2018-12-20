@@ -13,14 +13,14 @@
             <?php echo bloginfo('name') ?>
         </a>
 
-        <nav class="l-header__nav" role="navigation">
+        <nav class="c-offcanvas js-offcanvas" role="navigation">
             <?php wp_nav_menu([
                 'block' => 'menu',
                 'container' => false
             ]) ?>
         </nav>
 
-        <button class="hamburger hamburger--squeeze" type="button">
+        <button class="hamburger hamburger--squeeze js-hamburger" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>

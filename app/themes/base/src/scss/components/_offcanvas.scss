@@ -1,0 +1,32 @@
+.c-offcanvas {
+  background: #2980b9;
+  bottom: 0;
+  padding-top: 59px;
+  position: fixed;
+  right: -300px;
+  text-align: center;
+  top: 0;
+  transition: 500ms right;
+  width: 300px;
+
+  &--open {
+    right: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  a {
+    color: #fff;
+    display: block;
+    padding: 2rem 0;
+    text-decoration: none;
+
+    @include on-event {
+      background: rgba(#fff, 0.1);
+    }
+  }
+}
