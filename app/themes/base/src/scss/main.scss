@@ -35,12 +35,12 @@ $hamburger-types: (squeeze);
 @import "layout/footer";
 
 // 5. Components
-@import "components/article-card";
 @import "components/article";
 @import "components/author";
 @import "components/grid";
 @import "components/hero";
 @import "components/button";
+@import "components/card";
 
 // 6. Page-specific styles
 @import "pages/home";
