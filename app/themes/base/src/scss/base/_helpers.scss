@@ -22,6 +22,10 @@
   margin-left: auto; /* 2 */
   margin-right: auto; /* 2 */
   width: 100%; /* 1 */
+
+  &--spaced {
+    margin: 1rem auto;
+  }
 }
 
 /**

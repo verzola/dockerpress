@@ -6,7 +6,7 @@
 
 <main role="main">
 
-    <div class="container c-grid">
+    <div class="container container--spaced c-grid">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post() ?>
 
