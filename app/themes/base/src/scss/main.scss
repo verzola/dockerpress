@@ -1,20 +1,46 @@
 @charset 'UTF-8';
 
 // 1. Configuration and helpers
-@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
 
 // 2. Vendors
-@import "~normalize.css/normalize.css", "vendor/wordpress";
+@import "~normalize.css/normalize.css";
+@import "vendor/wordpress";
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 30px;
+$hamburger-layer-height: 3px;
+$hamburger-layer-spacing: 6px;
+$hamburger-layer-color: #fff;
+$hamburger-layer-border-radius: 0;
+$hamburger-hover-opacity: 0.7;
+$hamburger-active-layer-color: $hamburger-layer-color;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+$hamburger-hover-use-filter: false;
+$hamburger-hover-filter: opacity(50%);
+$hamburger-active-hover-filter: $hamburger-hover-filter;
+$hamburger-types: (squeeze);
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
 
 // 3. Base stuff
-@import "base/base", "base/fonts", "base/typography", "base/helpers";
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+@import "base/helpers";
 
 // 4. Layout-related sections
-@import "layout/header", "layout/footer";
+@import "layout/header";
+@import "layout/footer";
 
 // 5. Components
-@import "components/article-card", "components/article", "components/author",
-  "components/grid", "components/hero", "components/button";
+@import "components/article-card";
+@import "components/article";
+@import "components/author";
+@import "components/grid";
+@import "components/hero";
+@import "components/button";
 
 // 6. Page-specific styles
 @import "pages/home";

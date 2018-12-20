@@ -3,7 +3,7 @@
 <main class="l-main" role="main">
 
     <header class="c-hero">
-        <h1>Posts</h1>
+        <h1><i class="fas fa-pencil-alt"></i> Posts</h1>
     </header>
 
     <div class="container c-grid">
@@ -15,10 +15,11 @@
 
                 <div class="c-article-card__content">
                     <header>
-
                         <div class="c-author clearfix">
                             <img class="c-author__avatar" src="<?php echo get_avatar_url(get_the_author_meta('ID')) ?>" />
+
                             <div class="c-author__author"><?php the_author() ?></div>
+
                             <time class="c-article-card__time"><?php the_time( get_option( 'date_format' ) ) ?></time>
                         </div>
 
@@ -29,7 +30,6 @@
 
                     <a class="c-button" href="<?php echo get_permalink() ?>">Read more</a>
                 </div>
-
             </article>
 
         <?php endwhile; else: ?>

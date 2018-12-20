@@ -19,4 +19,10 @@
                 'container' => false
             ]) ?>
         </nav>
+
+        <button class="hamburger hamburger--squeeze hide-desktop" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
     </header>
