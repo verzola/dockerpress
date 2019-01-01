@@ -22,7 +22,7 @@ services:
 
   dev:
     image: node:11
-    command: ./dev
+    command: sh -c "yarn; yarn start"
     volumes:
       - ./app/themes/base/:/app/
     working_dir: /app
