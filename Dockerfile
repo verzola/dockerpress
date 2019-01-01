@@ -1,15 +1,16 @@
 FROM node:11
 WORKDIR /app
-COPY ./app/themes/base/package*.json ./
+COPY ./app/themes/base/package.json ./
+COPY ./app/themes/base/yarn.lock ./
 RUN yarn
 COPY ./app/themes/base/ .
 RUN yarn run build
 
-FROM wordpress:php7.2
+FROM composer:latest
+COPY . .
+RUN composer install
+
+FROM wordpress:5-apache
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-COPY ./app/mu-plugins /var/www/html/wp-content/mu-plugins
-COPY ./app/plugins /var/www/html/wp-content/plugins
-COPY ./app/wp-config.php /var/www/html/wp-config.php
+COPY --from=1 /app /var/www/html/
 COPY --from=0 /app /var/www/html/wp-content/themes/base
-COPY ./app/uploads /var/www/html/wp-content/uploads
-# @TODO: Install composer dependencies
