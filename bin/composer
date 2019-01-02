@@ -1,2 +1,2 @@
-#/bin/sh
+#!/bin/sh
 docker run --rm --volume /${PWD}:/app --user $(id -u):$(id -g) composer $@
