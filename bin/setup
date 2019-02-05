@@ -1,4 +1,3 @@
 #!/bin/sh
 cp .env.example .env
-./bin/composer install
 docker-compose up -d

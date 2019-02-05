@@ -61,7 +61,7 @@ Wait a few seconds and open http://localhost to setup Wordpress.
 Open http://localhost:3000 to develop using BrowserSync.
 
 # after initial setup, run this command to start the containers
-$ ./bin/start
+$ ./bin/dev
 ```
 
 ## :deciduous_tree: Environment variables <a id="env"></a>
@@ -95,19 +95,16 @@ WP_DEBUG=true
 ## :robot: Helpers <a id="helpers"></a>
 These helpers run things inside containers, so you don't have to install anything besides Docker on your machine
 
-- ./bin/build -> build production webpack bundle
-- ./bin/logs -> attach to browsersync container
-- ./bin/wp -> wrapper for wp-cli
-- ./bin/mysql -> wrapper to connect to mysql shell
+- ./bin/composer -> wrapper for php composer
+- ./bin/deploy -> deploy dockerpress stack into a docker swarm
+- ./bin/dev -> start up dev containers
 - ./bin/dump -> create a database dump in database/dump.sql
+- ./bin/logs -> attach to browsersync container
 - ./bin/mailhog -> starts mailhog service
-- ./bin/yarn -> wrapper for yarn package manager
-- ./bin/npm -> wrapper for npm package manager
-- ./bin/composer -> wrapper for composer package manager
-- ./bin/format -> formats base theme code with prettier
+- ./bin/mysql -> wrapper to connect to mysql shell
 - ./bin/reset -> delete all containers, mysql, vendor and wp folder
 - ./bin/setup -> setup dockerpress and startup containers
-- ./bin/start -> start up containers
+- ./bin/wp -> wrapper for wp-cli
 
 ## :electric_plug: Plugins <a id="plugins"></a>
 - Base plugin for general project config/functions
