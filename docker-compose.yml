@@ -24,6 +24,8 @@ services:
   dev:
     image: node:11
     command: sh -c "yarn; yarn start"
+    environment:
+      - BROWSERSYNC_PROXY=http://wordpress
     volumes:
       - ./app/themes/base/:/app/
     working_dir: /app
