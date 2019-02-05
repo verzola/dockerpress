@@ -3,20 +3,22 @@ version: '3'
 services:
 
   wordpress:
-    image: wordpress:5-apache
+    image: dockerpress
+    build: .
     env_file: .env
     ports:
       - 80:80
     volumes:
       - ./app/:/var/www/html
+    command: sh -c "composer install && apache2-foreground"
 
   mysql:
     image: mysql:5.7
     ports:
       - 3306:3306
     environment:
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_DATABASE=wordpress
+      - MYSQL_ROOT_PASSWORD=changeme
+      - MYSQL_DATABASE=dockerpress
     volumes:
       - ./database/mysql:/var/lib/mysql
 
