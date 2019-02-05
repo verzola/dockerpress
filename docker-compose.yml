@@ -10,7 +10,6 @@ services:
       - 80:80
     volumes:
       - ./app/:/var/www/html
-    command: sh -c "composer install && apache2-foreground"
 
   mysql:
     image: mysql:5.7
