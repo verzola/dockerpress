@@ -17,6 +17,7 @@ app/plugins/**/*
 app/mu-plugins/**/*
 !app/mu-plugins/mu-autoloader.php
 !app/plugins/.gitkeep
+!app/plugins/base
 !app/mu-plugins/.gitkeep
 
 # Uploads
