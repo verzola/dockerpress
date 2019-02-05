@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone https://github.com/verzola/dockerpress.git
+git clone --recursive https://github.com/verzola/dockerpress.git
 cd dockerpress
 ./bin/setup
 sleep 15s && sensible-browser http://localhost

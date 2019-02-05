@@ -49,7 +49,7 @@ $ curl https://raw.githubusercontent.com/verzola/dockerpress/master/bin/quicksta
 ## :scroll: Setup <a id="setup"></a>
 ```sh
 # clone repo
-$ git clone https://github.com/verzola/dockerpress.git
+$ git clone --recursive https://github.com/verzola/dockerpress.git
 
 # enter in directory
 $ cd dockerpress
