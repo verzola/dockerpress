@@ -28,7 +28,6 @@ Fast Wordpress development environment based on Docker and Webpack.
 - :lipstick: Prettier
 - :no_entry_sign: :hankey: Stylelint
 - :no_entry_sign: :hankey: ESLint
-- :battery: Comes with base theme pre-configured
 - BrowserSync
 - Autoprefixer
 - WP-CLI
@@ -107,13 +106,7 @@ These helpers run things inside containers, so you don't have to install anythin
 - ./bin/wp -> wrapper for wp-cli
 
 ## :electric_plug: Plugins <a id="plugins"></a>
-- Base plugin for general project config/functions
-- [Plate](https://github.com/wordplate/plate)
-- [BEM](https://github.com/wordplate/bem)
-- [Mail](https://github.com/wordplate/mail)
-- [Disable Emojis](https://br.wordpress.org/plugins/disable-emojis/)
 - [Duplicate Post](https://br.wordpress.org/plugins/duplicate-post/)
-- [Email Log](https://wordpress.org/plugins/email-log/)
 
 ##  :mailbox: MailHog <a id="mail"></a>
 1. Run ./bin/mailhog

@@ -68,9 +68,6 @@ define( 'SECURE_AUTH_SALT', env('WP_SECURE_AUTH_SALT') );
 define( 'LOGGED_IN_SALT',   env('WP_LOGGED_IN_SALT') );
 define( 'NONCE_SALT',       env('WP_NONCE_SALT') );
 
-/* Default theme after install */
-define( 'WP_DEFAULT_THEME', 'base' );
-
 define( 'FS_METHOD', 'direct' );
 
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
