@@ -1,11 +1,25 @@
-version: '3'
+version: '3.6'
 
 services:
 
   wordpress:
     image: dockerpress
     build: .
-    env_file: .env
+    environment:
+      - WP_DB_HOST=${WP_DB_HOST:-mysql}
+      - WP_DB_NAME=${WP_DB_NAME:-dockerpress}
+      - WP_TABLE_PREFIX=${WP_TABLE_PREFIX:-wp_}
+      - WP_DB_USER=${WP_DB_USER:-root}
+      - WP_DB_PASSWORD=${WP_DB_PASSWORD:-changeme}
+      - WP_AUTH_KEY=${WP_AUTH_KEY:-dev}
+      - WP_SECURE_AUTH_KEY=${WP_SECURE_AUTH_KEY:-dev}
+      - WP_LOGGED_IN_KEY=${WP_LOGGED_IN_KEY:-dev}
+      - WP_NONCE_KEY=${WP_NONCE_KEY:-dev}
+      - WP_AUTH_SALT=${WP_AUTH_SALT:-dev}
+      - WP_SECURE_AUTH_SALT=${WP_SECURE_AUTH_SALT:-dev}
+      - WP_LOGGED_IN_SALT=${WP_LOGGED_IN_SALT:-dev}
+      - WP_NONCE_SALT=${WP_NONCE_SALT:-dev}
+      - WP_DEBUG=${WP_DEBUG:-1}
     volumes:
       - ./app/:/var/www/html
     restart: always
@@ -13,18 +27,20 @@ services:
       - mysql
 
   mysql:
-    image: mysql:5.7
+    image: mysql:${MYSQL_VERSION:-5.7}
     ports:
       - 3306:3306
     environment:
-      - MYSQL_ROOT_PASSWORD=changeme
-      - MYSQL_DATABASE=dockerpress
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-password}
+      - MYSQL_USER=${MYSQL_USER:-root}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD:-password}
+      - MYSQL_DATABASE=${MYSQL_DATABASE:-dockerpress}
     volumes:
       - ./data/mysql:/var/lib/mysql
     restart: always
 
   nginx:
-    image: nginx:1.16-alpine
+    image: nginx:${NGINX_VERSION:-1.16-alpine}
     ports:
       - "80:80"
       - "443:443"

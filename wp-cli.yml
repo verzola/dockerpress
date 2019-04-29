@@ -1,7 +1,22 @@
-version: '3'
+version: '3.6'
+
 services:
   cli:
-    image: wordpress:cli-php7.2
-    env_file: .env
+    image: wordpress:cli-php7.3
+    environment:
+      - WP_DB_HOST=${WP_DB_HOST:-mysql}
+      - WP_DB_NAME=${WP_DB_NAME:-dockerpress}
+      - WP_TABLE_PREFIX=${WP_TABLE_PREFIX:-wp_}
+      - WP_DB_USER=${WP_DB_USER:-root}
+      - WP_DB_PASSWORD=${WP_DB_PASSWORD:-changeme}
+      - WP_AUTH_KEY=${WP_AUTH_KEY:-dev}
+      - WP_SECURE_AUTH_KEY=${WP_SECURE_AUTH_KEY:-dev}
+      - WP_LOGGED_IN_KEY=${WP_LOGGED_IN_KEY:-dev}
+      - WP_NONCE_KEY=${WP_NONCE_KEY:-dev}
+      - WP_AUTH_SALT=${WP_AUTH_SALT:-dev}
+      - WP_SECURE_AUTH_SALT=${WP_SECURE_AUTH_SALT:-dev}
+      - WP_LOGGED_IN_SALT=${WP_LOGGED_IN_SALT:-dev}
+      - WP_NONCE_SALT=${WP_NONCE_SALT:-dev}
+      - WP_DEBUG=${WP_DEBUG:-1}
     volumes:
       - ./app:/var/www/html
