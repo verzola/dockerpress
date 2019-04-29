@@ -17,21 +17,12 @@ Fast Wordpress development environment based on Docker and Webpack.
 11. [TODO](#todo)
 
 ## :trophy: Features <a id="features"></a>
-- :whale: Official Wordpress Docker image
-- :newspaper: Wordpress 5.0.2
-- :elephant: PHP 7.2
+- :newspaper: Latest Wordpress
+- :elephant: PHP 7.3
 - :dolphin: MySQL 5.7
-- :musical_score: Composer
-- :spider_web: :package: Webpack 4
-- :eyeglasses: SCSS
+- :musical_score: Plugins managed by Composer
 - :mailbox: MailHog
-- :lipstick: Prettier
-- :no_entry_sign: :hankey: Stylelint
-- :no_entry_sign: :hankey: ESLint
-- BrowserSync
-- Autoprefixer
 - WP-CLI
-- Optimizes and minifies JS, CSS and images
 
 ## :ballot_box_with_check: Requirements <a id="requirements"></a>
 - :whale: [docker](https://www.docker.com/get-started)
@@ -57,18 +48,15 @@ $ cd dockerpress
 $ ./bin/setup
 
 Wait a few seconds and open http://localhost to setup Wordpress.
-Open http://localhost:3000 to develop using BrowserSync.
+Open http://localhost
 
 # after initial setup, run this command to start the containers
-$ ./bin/dev
+$ ./bin/start
 ```
 
 ## :deciduous_tree: Environment variables <a id="env"></a>
 If you need to edit the default config, edit .env file.
 ```sh
-# Inject CSS via JS
-INJECT_CSS=true
-
 # Wordpress Database Configuration
 WP_DB_HOST=mysql
 WP_DB_USER=root
@@ -95,8 +83,7 @@ WP_DEBUG=true
 These helpers run things inside containers, so you don't have to install anything besides Docker on your machine
 
 - ./bin/composer -> wrapper for php composer
-- ./bin/deploy -> deploy dockerpress stack into a docker swarm
-- ./bin/dev -> start up dev containers
+- ./bin/start -> start up
 - ./bin/dump -> create a database dump in database/dump.sql
 - ./bin/logs -> attach to browsersync container
 - ./bin/mailhog -> starts mailhog service
@@ -107,14 +94,12 @@ These helpers run things inside containers, so you don't have to install anythin
 
 ## :electric_plug: Plugins <a id="plugins"></a>
 - [Duplicate Post](https://br.wordpress.org/plugins/duplicate-post/)
+Go to https://wpackagist.org add plugins to composer
 
 ##  :mailbox: MailHog <a id="mail"></a>
 1. Run ./bin/mailhog
 2. Send an e-mail
 3. Access http://localhost:8025
-
-## :warning: Known issues <a id="known-issues"></a>
-- Watch does not work on Docker Desktop on Windows.
 
 ## :raising_hand_woman: Contributing <a id="contrib"></a>
 Contribuitions are welcome. If you find any problem or have a suggestion, please [open an issue](https://github.com/verzola/dockerpress/issues/new)
