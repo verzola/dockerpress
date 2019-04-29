@@ -58,15 +58,11 @@ $ ./bin/start
 ## :deciduous_tree: Environment variables <a id="env"></a>
 If you need to edit the default config, edit .env file.
 ```sh
-# Wordpress Database Configuration
 WP_DB_HOST=mysql
-WP_DB_USER=root
-WP_DB_PASSWORD=root
-WP_DB_NAME=wordpress
+WP_DB_NAME=dockerpress
 WP_TABLE_PREFIX=wp_
-
-# Wordpress Keys Configuration
-# Use this: https://wordplate.github.io/salt/ and append WP_.
+WP_DB_USER=root
+WP_DB_PASSWORD=changeme
 WP_AUTH_KEY=dev
 WP_SECURE_AUTH_KEY=dev
 WP_LOGGED_IN_KEY=dev
@@ -75,9 +71,15 @@ WP_AUTH_SALT=dev
 WP_SECURE_AUTH_SALT=dev
 WP_LOGGED_IN_SALT=dev
 WP_NONCE_SALT=dev
+WP_DEBUG=1
 
-# Debug mode on
-WP_DEBUG=true
+NGINX_VERSION=1.16-alpine
+
+MYSQL_VERSION=5.7
+MYSQL_ROOT_PASSWORD=changeme
+MYSQL_USER=root
+MYSQL_PASSWORD=changeme
+MYSQL_DATABASE=dockerpress
 ```
 
 ## :robot: Helpers <a id="helpers"></a>
@@ -95,12 +97,15 @@ These helpers run things inside containers, so you don't have to install anythin
 
 ## :electric_plug: Plugins <a id="plugins"></a>
 - [Duplicate Post](https://br.wordpress.org/plugins/duplicate-post/)
+
 Go to https://wpackagist.org add plugins to composer
 
 ##  :mailbox: MailHog <a id="mail"></a>
 1. Run ./bin/mailhog
 2. Send an e-mail
 3. Access http://localhost:8025
+
+## Letsencrypt
 
 ## :raising_hand_woman: Contributing <a id="contrib"></a>
 Contribuitions are welcome. If you find any problem or have a suggestion, please [open an issue](https://github.com/verzola/dockerpress/issues/new)
