@@ -1,5 +1,5 @@
 # :whale: :newspaper: DockerPress
-Fast Wordpress development environment based on Docker and Webpack.
+Fast Wordpress development environment based on Docker.
 
 **WARNING**: This tool is under development. Use at your own risk.  :warning:
 
@@ -19,8 +19,9 @@ Fast Wordpress development environment based on Docker and Webpack.
 ## :trophy: Features <a id="features"></a>
 - :newspaper: Latest Wordpress
 - :elephant: PHP 7.3
+- Nginx
 - :dolphin: MySQL 5.7
-- :musical_score: Plugins managed by Composer
+- :musical_score: Composer
 - :mailbox: MailHog
 - WP-CLI
 
@@ -39,7 +40,7 @@ $ curl https://raw.githubusercontent.com/verzola/dockerpress/master/bin/quicksta
 ## :scroll: Setup <a id="setup"></a>
 ```sh
 # clone repo
-$ git clone --recursive https://github.com/verzola/dockerpress.git
+$ git clone https://github.com/verzola/dockerpress.git
 
 # enter in directory
 $ cd dockerpress
