@@ -20,6 +20,11 @@ services:
       - WP_LOGGED_IN_SALT=${WP_LOGGED_IN_SALT:-dev}
       - WP_NONCE_SALT=${WP_NONCE_SALT:-dev}
       - WP_DEBUG=${WP_DEBUG:-1}
+      - MAIL_HOST=${MAIL_HOST:-mailhog}
+      - MAIL_PORT=${MAIL_PORT:-1025}
+      - MAIL_USERNAME=${MAIL_USERNAME:-null}
+      - MAIL_PASSWORD=${MAIL_PASSWORD:-null}
+      - MAIL_ENCRYPTION=${MAIL_ENCRYPTION:-null}
     volumes:
       - ./app/:/var/www/html
     restart: always
