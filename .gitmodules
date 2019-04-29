@@ -1,6 +1,0 @@
-[submodule "app/themes/base"]
-	path = app/themes/base
-	url = git@github.com:verzola/wp-base-theme.git
-[submodule "app/plugins/base"]
-	path = app/plugins/base
-	url = git@github.com:verzola/wp-base-plugin.git
