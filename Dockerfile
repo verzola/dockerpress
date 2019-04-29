@@ -1,4 +1,4 @@
-FROM php:7.3-apache
+FROM php:7.3-fpm
 
 # install the PHP extensions we need
 RUN set -ex; \
@@ -39,7 +39,3 @@ RUN { \
 		echo 'opcache.fast_shutdown=1'; \
 		echo 'opcache.enable_cli=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-
-RUN a2enmod rewrite expires
-
-CMD ["apache2-foreground"]

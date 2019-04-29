@@ -6,10 +6,9 @@ services:
     image: dockerpress
     build: .
     env_file: .env
-    ports:
-      - 80:80
     volumes:
       - ./app/:/var/www/html
+    restart: always
 
   mysql:
     image: mysql:5.7
@@ -21,17 +20,21 @@ services:
     volumes:
       - ./database/mysql:/var/lib/mysql
 
-  dev:
-    image: node:11
-    command: sh -c "yarn; yarn start"
-    environment:
-      - BROWSERSYNC_PROXY=http://wordpress
-    volumes:
-      - ./app/themes/base/:/app/
-    working_dir: /app
+  nginx:
+    image: nginx:1.16-alpine
     ports:
-      - 3000:3000
-      - 3001:3001
-    tty: true
-    environment:
-      - TERM=xterm-256color
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./app:/var/www/html
+      - ./data/nginx:/etc/nginx/conf.d
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
+
+  certbot:
+    image: certbot/certbot
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
