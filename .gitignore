@@ -1,26 +1,27 @@
 # Package Managers
 vendor/
-node_modules/
-yarn-error.log
 
 # Dotenv
 .env
-
-# MySQL volume folder
-mysql/
 
 # WP Core
 app/wp
 
 # Plugins
 app/plugins/**/*
+!app/plugins/.gitkeep
 app/mu-plugins/**/*
 !app/mu-plugins/mu-autoloader.php
-!app/plugins/.gitkeep
-!app/plugins/base
 !app/mu-plugins/.gitkeep
+
+# MySQL volume folder
+data/mysql/**/*
+!data/mysql/.gitkeep
 
 # Uploads
 app/uploads/**/*
 !app/uploads/.gitkeep
 
+# Certbot files
+data/certbot/**/*
+!data/certbot/.gitkeep
