@@ -9,6 +9,8 @@ services:
     volumes:
       - ./app/:/var/www/html
     restart: always
+    depends_on:
+      - mysql
 
   mysql:
     image: mysql:5.7
@@ -33,6 +35,8 @@ services:
       - ./data/certbot/www:/var/www/certbot
     command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
     restart: always
+    depends_on:
+      - wordpress
 
   certbot:
     image: certbot/certbot
