@@ -22,8 +22,8 @@
     ],
     "require": {
         "composer/installers": "~1.0",
-        "johnpbloch/wordpress": "^5.1",
-        "johnpbloch/wordpress-core": "^5.1",
+        "johnpbloch/wordpress": "^5.2",
+        "johnpbloch/wordpress-core": "^5.2",
         "wordplate/mail": "^4.0",
         "wordplate/plate": "^4.1",
         "wpackagist-plugin/duplicate-post": "^3.2"
