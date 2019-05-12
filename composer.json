@@ -25,8 +25,7 @@
         "johnpbloch/wordpress": "^5.2",
         "johnpbloch/wordpress-core": "^5.2",
         "wordplate/mail": "^4.0",
-        "wordplate/plate": "^4.1",
-        "wpackagist-plugin/duplicate-post": "^3.2"
+        "wpackagist-theme/twentynineteen":"1.4"
     },
     "extra": {
         "wordpress-install-dir": "app/wp",

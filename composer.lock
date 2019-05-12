@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3e46af9be2d3914733905c8b3987b12",
+    "content-hash": "f3d82c61f8f97e894c4739f68b8fd2fd",
     "packages": [
         {
             "name": "composer/installers",
@@ -298,70 +298,22 @@
             "time": "2018-03-15T13:37:36+00:00"
         },
         {
-            "name": "wordplate/plate",
-            "version": "4.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wordplate/plate.git",
-                "reference": "0c567b060c6f97b6b26a963a0a06ca3dc9bd4fdf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wordplate/plate/zipball/0c567b060c6f97b6b26a963a0a06ca3dc9bd4fdf",
-                "reference": "0c567b060c6f97b6b26a963a0a06ca3dc9bd4fdf",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.1.3"
-            },
-            "type": "wordpress-plugin",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.1-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Vincent Klaiber",
-                    "email": "hello@vinkla.com",
-                    "homepage": "https://vinkla.com"
-                },
-                {
-                    "name": "Chris Andersson",
-                    "email": "hello@puredazzle.se",
-                    "homepage": "https://puredazzle.se"
-                }
-            ],
-            "description": "A theme support plugin for WordPlate",
-            "keywords": [
-                "plate",
-                "plugin",
-                "wordplate",
-                "wordpress"
-            ],
-            "time": "2019-01-12T19:01:37+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/duplicate-post",
-            "version": "3.2.2",
+            "name": "wpackagist-theme/twentynineteen",
+            "version": "1.4",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/duplicate-post/",
-                "reference": "tags/3.2.2"
+                "url": "https://themes.svn.wordpress.org/twentynineteen/",
+                "reference": "1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duplicate-post.3.2.2.zip"
+                "url": "https://downloads.wordpress.org/theme/twentynineteen.1.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/duplicate-post/"
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentynineteen/"
         }
     ],
     "packages-dev": [],
