@@ -1,2 +1,2 @@
 #!/bin/sh
-docker-compose run --rm mysql mysqldump wordpress -h mysql -uroot -proot > ./database/dump.sql
+docker-compose run --rm mysql mysqldump dockerpress -h mysql -uroot -pchangeme > ./data/dumps/dump.sql
