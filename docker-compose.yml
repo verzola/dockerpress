@@ -2,8 +2,7 @@ version: "3.7"
 
 services:
   wordpress:
-    image: dockerpress
-    build: .
+    image: verzola/dockerpress
     environment:
       - WP_DB_HOST=${WP_DB_HOST:-mysql}
       - WP_DB_NAME=${WP_DB_NAME:-dockerpress}
