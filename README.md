@@ -94,21 +94,20 @@ MYSQL_DATABASE=dockerpress
 
 These helpers run things inside containers, so you don't have to install anything besides Docker on your machine
 
-- ./bin/composer -> wrapper for php composer
-- ./bin/start -> start up
-- ./bin/dump -> create a database dump in database/dump.sql
-- ./bin/logs -> attach to browsersync container
-- ./bin/mailhog -> starts mailhog service
-- ./bin/mysql -> wrapper to connect to mysql shell
-- ./bin/reset -> delete all containers, mysql, vendor and wp folder
-- ./bin/setup -> setup dockerpress and startup containers
+- ./bin/composer -> wrapper for composer inside docker
+- ./bin/dump -> create a database dump in `data/dumps/dump.sql`
+- ./bin/logs -> show services logs
+- ./bin/mailhog -> start mailhog service
+- ./bin/mysql -> wrapper for mysql inside docker
+- ./bin/reset -> delete everything and start again
+- ./bin/setup -> setup dockerpress and starts up containers
+- ./bin/start -> start containers
+- ./bin/stop-> start up
 - ./bin/wp -> wrapper for wp-cli
 
 ## :electric_plug: Plugins <a id="plugins"></a>
 
-- [Duplicate Post](https://br.wordpress.org/plugins/duplicate-post/)
-
-Go to https://wpackagist.org add plugins to composer
+Plugins can be added on `composer.json`. Use [WPackagist](https://wpackagist.org)
 
 ## :mailbox: Mailhog <a id="mail"></a>
 
