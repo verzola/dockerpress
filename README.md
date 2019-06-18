@@ -1,6 +1,6 @@
 # :whale: :newspaper: DockerPress
 
-Fast Wordpress development environment based on Docker.
+Fast Wordpress environment based on Docker.
 
 **WARNING**: This tool is under development. Use at your own risk. :warning:
 
@@ -23,9 +23,9 @@ Fast Wordpress development environment based on Docker.
 - :elephant: PHP 7.3
 - Nginx 1.17
 - :dolphin: MySQL 8
-- :musical_score: Composer
-- :mailbox: MailHog
-- WP-CLI
+- :musical_score: [Composer](https://getcomposer.org/)
+- :mailbox: [Mailhog](https://github.com/mailhog/MailHog)
+- [WP-CLI](https://wp-cli.org/)
 
 ## :ballot_box_with_check: Requirements <a id="requirements"></a>
 
@@ -110,13 +110,11 @@ These helpers run things inside containers, so you don't have to install anythin
 
 Go to https://wpackagist.org add plugins to composer
 
-## :mailbox: MailHog <a id="mail"></a>
+## :mailbox: Mailhog <a id="mail"></a>
 
 1. Run ./bin/mailhog
 2. Send an e-mail
 3. Access http://localhost:8025
-
-## Letsencrypt
 
 ## :raising_hand_woman: Contributing <a id="contrib"></a>
 
