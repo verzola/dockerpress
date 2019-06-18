@@ -1,2 +1,2 @@
 #!/bin/sh
-docker-compose run --rm mysql mysql -hmysql -uroot -proot
+docker-compose run --rm mysql mysql -hmysql -uroot -pchangeme
