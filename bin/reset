@@ -4,4 +4,5 @@ docker-compose rm
 sudo rm -rf database/mysql
 sudo rm -rf app/wp
 sudo rm -rf app/vendor
+./bin/composer install
 docker-compose up -d
