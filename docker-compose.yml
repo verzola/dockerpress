@@ -7,7 +7,7 @@ services:
       - WP_DB_HOST=${WP_DB_HOST:-mysql}
       - WP_DB_NAME=${WP_DB_NAME:-dockerpress}
       - WP_TABLE_PREFIX=${WP_TABLE_PREFIX:-wp_}
-      - WP_DB_USER=${WP_DB_USER:-root}
+      - WP_DB_USER=${WP_DB_USER:-dockerpress}
       - WP_DB_PASSWORD=${WP_DB_PASSWORD:-changeme}
       - WP_AUTH_KEY=${WP_AUTH_KEY:-dev}
       - WP_SECURE_AUTH_KEY=${WP_SECURE_AUTH_KEY:-dev}
@@ -33,8 +33,8 @@ services:
     ports:
       - 3306:3306
     environment:
-      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-password}
-      - MYSQL_USER=${MYSQL_USER:-root}
+      - MYSQL_RANDOM_ROOT_PASSWORD=true
+      - MYSQL_USER=${MYSQL_USER:-dockerpress}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD:-changeme}
       - MYSQL_DATABASE=${MYSQL_DATABASE:-dockerpress}
     volumes:
