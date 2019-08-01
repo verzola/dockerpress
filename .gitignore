@@ -14,10 +14,6 @@ app/mu-plugins/**/*
 !app/mu-plugins/mu-autoloader.php
 !app/mu-plugins/.gitkeep
 
-# MySQL volume folder
-data/mysql/**/*
-!data/mysql/.gitkeep
-
 # Uploads
 app/uploads/**/*
 !app/uploads/.gitkeep
