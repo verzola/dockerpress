@@ -1,6 +1,7 @@
 #!/bin/sh
+sudo echo 'Resetting everything...'
 docker-compose kill
-docker-compose rm
+docker-compose rm -f
 sudo rm -rf data/mysql
 sudo rm -rf app/wp
 sudo rm -rf app/vendor
