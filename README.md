@@ -19,7 +19,7 @@ Fast Wordpress environment based on Docker.
 
 ## :trophy: Features <a id="features"></a>
 
-- :newspaper: Wordpress 5.2
+- :newspaper: Wordpress 5.8
 - :elephant: PHP 7.3
 - Nginx 1.17
 - :dolphin: MySQL 8
