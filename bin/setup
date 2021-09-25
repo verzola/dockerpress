@@ -1,4 +1,5 @@
 #!/bin/sh
 cp .env.example .env
 ./bin/composer install
+chmod -R 777 app/uploads
 docker-compose up -d
