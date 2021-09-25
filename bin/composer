@@ -1,2 +1,2 @@
 #!/bin/sh
-docker run -t --rm -v "/$(pwd):/app" -u "$(id -u):$(id -g)" composer:1 $@
+docker run -t --rm -v "/$(pwd):/app" -u "$(id -u):$(id -g)" composer $@

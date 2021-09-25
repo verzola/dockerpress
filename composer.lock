@@ -4,42 +4,39 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "740511d73df32162f122a803cf7da2d8",
+    "content-hash": "3135228d206f284af023f2af133a6656",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.11.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "ae03311f45dfe194412081526be2e003960df74b"
+                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/ae03311f45dfe194412081526be2e003960df74b",
-                "reference": "ae03311f45dfe194412081526be2e003960df74b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
+                "reference": "a241e78aaeb09781f5f5b92ac01ffd13ab43e5e8",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0"
-            },
-            "replace": {
-                "roundcube/plugin-installer": "*",
-                "shama/baton": "*"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
             },
             "require-dev": {
                 "composer/composer": "1.6.* || ^2.0",
                 "composer/semver": "^1 || ^3",
                 "phpstan/phpstan": "^0.12.55",
                 "phpstan/phpstan-phpunit": "^0.12.16",
-                "symfony/phpunit-bridge": "^4.2 || ^5",
-                "symfony/process": "^2.3"
+                "symfony/phpunit-bridge": "^5.3",
+                "symfony/process": "^5"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-main": "1.x-dev"
+                    "dev-main": "2.x-dev"
                 }
             },
             "autoload": {
@@ -61,7 +58,6 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "https://composer.github.io/installers/",
             "keywords": [
-                "Craft",
                 "Dolibarr",
                 "Eliasis",
                 "Hurad",
@@ -82,7 +78,6 @@
                 "Whmcs",
                 "WolfCMS",
                 "agl",
-                "aimeos",
                 "annotatecms",
                 "attogram",
                 "bitrix",
@@ -101,7 +96,6 @@
                 "grav",
                 "installer",
                 "itop",
-                "joomla",
                 "known",
                 "kohana",
                 "laravel",
@@ -116,6 +110,7 @@
                 "modx",
                 "moodle",
                 "osclass",
+                "pantheon",
                 "phpbb",
                 "piwik",
                 "ppi",
@@ -128,9 +123,7 @@
                 "silverstripe",
                 "sydes",
                 "sylius",
-                "symfony",
                 "tastyigniter",
-                "typo3",
                 "wordpress",
                 "yawik",
                 "zend",
@@ -138,7 +131,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/v1.11.0"
+                "source": "https://github.com/composer/installers/tree/v2.0.1"
             },
             "funding": [
                 {
@@ -154,24 +147,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-28T06:42:17+00:00"
+            "time": "2021-09-13T08:21:20+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "5.8.0",
+            "version": "5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "e909768a636f7f4eb6951de1da363055aa5d1c69"
+                "reference": "53e4131495e33e514fefe65cdeec39cfadf707cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/e909768a636f7f4eb6951de1da363055aa5d1c69",
-                "reference": "e909768a636f7f4eb6951de1da363055aa5d1c69",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/53e4131495e33e514fefe65cdeec39cfadf707cf",
+                "reference": "53e4131495e33e514fefe65cdeec39cfadf707cf",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "5.8.0",
+                "johnpbloch/wordpress-core": "5.8.1",
                 "johnpbloch/wordpress-core-installer": "^1.0 || ^2.0",
                 "php": ">=5.6.20"
             },
@@ -200,20 +193,20 @@
                 "source": "http://core.trac.wordpress.org/browser",
                 "wiki": "http://codex.wordpress.org/"
             },
-            "time": "2021-07-20T16:52:31+00:00"
+            "time": "2021-09-09T02:46:03+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.8.0",
+            "version": "5.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "30d5db01a682521b0a6cc827953f016486504312"
+                "reference": "6b6004e8c16a3b9ebc3ddac29ca8542dfa5ec5ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/30d5db01a682521b0a6cc827953f016486504312",
-                "reference": "30d5db01a682521b0a6cc827953f016486504312",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/6b6004e8c16a3b9ebc3ddac29ca8542dfa5ec5ff",
+                "reference": "6b6004e8c16a3b9ebc3ddac29ca8542dfa5ec5ff",
                 "shasum": ""
             },
             "require": {
@@ -221,7 +214,7 @@
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.8.0"
+                "wordpress/core-implementation": "5.8.1"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
@@ -248,7 +241,7 @@
                 "source": "https://core.trac.wordpress.org/browser",
                 "wiki": "https://codex.wordpress.org/"
             },
-            "time": "2021-07-20T16:52:26+00:00"
+            "time": "2021-09-09T02:46:00+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -358,7 +351,7 @@
                 "url": "https://downloads.wordpress.org/theme/twentytwentyone.1.4.zip"
             },
             "require": {
-                "composer/installers": "~1.0"
+                "composer/installers": "~1.0 || ~2.0"
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/twentytwentyone/"
